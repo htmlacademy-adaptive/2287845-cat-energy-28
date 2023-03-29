@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Uluk Usonbekov](https://up.htmlacademy.ru/adaptive/28/user/2287845).
-* Наставник: [Дмитрий Кукушкин](https://htmlacademy.ru/profile/kukushkinds).
+* Наставник: [Дима Кукушкин](https://htmlacademy.ru/profile/kukushkinds).
 
 ---
 
