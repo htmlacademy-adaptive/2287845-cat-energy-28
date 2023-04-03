@@ -6,23 +6,23 @@
 </head>
 <body class="page__body">
 <!--ХЭДЕР-->
-<header class="main-header">
-  <a class="main-header__logo" href="#">
-    <img class="main-header__logo-image" src="#" alt="Кэт энерджи" width="" height="">
+<header class="header">
+  <a class="header__logo" href="#">
+    <img class="header__logo-image" src="#" alt="Кэт энерджи" width="" height="">
   </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">
+  <nav class="header__nav nav">
+    <button class="nav__toggle" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+    <div class="nav__wrapper">
+      <ul class="nav__list">
+        <li class="nav-list__item nav-list__item--active">
           <a href="#">Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="nav-list__item">
           <a href="#">Каталог Продукции</a>
         </li>
-        <li class="site-list__item">
+        <li class="nav-list__item">
           <a href="#">Подбор Программы</a>
         </li>
       </ul>
@@ -30,18 +30,22 @@
   </nav>
 </header>
 <!--МЭЙН-->
-<main class="main-catalog">
-  <h1 class="main-catalog__title">Каталог продукции</h1>
-  <div class="main-catalog__wrapper catalog-cards">
-    <ul class="catalog-cards__list">
-      <li class="catalog-cards__item">
-        <img class="catalog-cards__img" src="#" alt="#">
-        <a class="catalog-cards__link" href="#">
-          Заказать
-        </a>
-      </li>
-    </ul>
-  </div>
+<main class="catalog">
+  <h1 class="catalog__title">Каталог продукции</h1>
+  <ul class="catalog__list">
+    <li class="catalog__item">
+      <img class="catalog__item-img" src="#" alt="#">
+      <div class="catalog__item-description">
+        <p class="catalog__item-heading">Cat Energy PRO 500 г</p>
+        <dl class="catalog__item-list">
+          <dt class="">Масса</dt>
+          <dd class="">500 г</dd>
+        </dl>
+      </div>
+      <a class="catalog__item-link" href="#">Заказать</a>
+    </li>
+
+  </ul>
 </main>
 <!--ФУТЕР-->
 <footer class="main-footer">
