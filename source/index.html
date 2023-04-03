@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-  
-  <div class="container">
+  <body class="page__body">
 
     <!--ХЭДЕР-->
-    <header class="page-header">
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <img class="navigation__logo" src="#" alt="Логотип Кэт Энерджи">
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">
-              <img class="navigation__logo" src="#" alt="Логотип Кэт Энерджи">
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#"></a>
-          </li>
-        </ul>
+    <header class="main-header">
+      <a class="main-header__logo" href="#">
+        <img class="main-header__logo-image" src="#" alt="Конт энерджи" width="" height="">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Каталог Продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Подбор Программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -111,29 +113,9 @@
     </main>
 
     <!--ФУТЕР-->
-    <footer class="page-footer">
-          <img class="page-footer-logo" src="#" alt="#">
-   <!-- ИКОНКИ-->
-        <ul class="page-footer__social">
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="#">
-              <img class="page-footer__image" src="#" alt="Иконка Вконтакте">
-            </a>
-          </li>
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="#">
-              <img class="page-footer__image" src="#" alt="Иконка Ютуб">
-            </a>
-          </li>
-          <li class="page-footer__item">
-            <a class="page-footer__link" href="#">
-              <img class="page-footer__image" src="#" alt="Иконка Телеграм">
-            </a>
-          </li>
-        </ul>
+    <footer class="footer">
 
     </footer>
 
-  </div>
   </body>
 </html>
