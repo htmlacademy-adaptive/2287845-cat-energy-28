@@ -1,0 +1,24 @@
+.about-products__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-products__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.about-products__subtitle {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+}

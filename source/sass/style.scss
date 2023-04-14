@@ -1,4 +1,8 @@
 // Начните писать стили здесь
-body {
-  background-color: #ffffff;
-}
+
+@import "blocks/fonts";
+@import "blocks/header";
+@import "global/global";
+@import "blocks/hero";
+@import "blocks/catalog-preview";
+@import "blocks/about.products";

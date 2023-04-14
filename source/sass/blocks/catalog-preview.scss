@@ -1,0 +1,34 @@
+
+
+.catalog-preview__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.catalog-preview__item-title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.catalog-preview__item-subtitle {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.catalog-preview__item-link {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
