@@ -1,0 +1,403 @@
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../../fonts/lato/Lato-Regular.woff") format("woff"), url("../../fonts/lato/Lato-Regular.woff2") format("woff2"), local("Lato-Regular");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("../../fonts/oswald/oswaldmedium.woff") format("woff"), url("../../fonts/oswald/oswaldmedium.woff2") format("woff2"), local("Oswald-Medum");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../../fonts/oswald/oswaldregular.woff") format("woff"), url("../../fonts/oswald/oswaldregular.woff2") format("woff2"), local("Oswald-Regular");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+.header {
+  display: flex;
+}
+
+.nav-list__link {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.button {
+  font-family: "Oswald-Medium", sans-serif;
+  background-color: #68b738;
+  text-align: center;
+  padding: 8px 44px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+}
+
+.hero__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.hero__subtitle {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.catalog-preview__item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.catalog-preview__item-title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.catalog-preview__item-subtitle {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.catalog-preview__item-link {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.about-products__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-products__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.about-products__subtitle {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+}
+
+.example {
+  background-color: #eaeaea;
+}
+
+.example__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__subtitle {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example-slider__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.example-slider__subtitle {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.example-cost__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contacts__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.contacts__text {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.copyright__text {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+
+.catalog__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.catalog__item-heading {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+}
+
+.catalog__item-terms {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog__item-description {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog__item-link {
+  background-color: #68b738;
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 109px;
+}
+
+.catalog-add__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+}
+
+.catalog-add__subtitle {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.catalog-add__show {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  padding: 10px 94px;
+}
+
+.additional__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.additional__item-heading {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.additional__item-terms {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.additional__item-description {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.present {
+  background-image: url("../../../img/catalog-img/catalog-green-bg.png");
+  background-repeat: no-repeat;
+  width: 280px;
+  height: 290px;
+}
+
+.present__description {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.program__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program-form__text {
+  font-family: "Lato-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.form-info__span {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-info__text {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-info__input {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form-info__input::placeholder {
+  opacity: 2;
+  color: #444444;
+}
+
+.form-radio__span {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.contacts-info__span {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.comment-form__span {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.comment-form__description {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.extra-form__title {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.extra-form__text {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+/*# sourceMappingURL=style.css.map */
