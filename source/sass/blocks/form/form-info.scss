@@ -1,0 +1,30 @@
+.form-info__span {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-info__text {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form-info__input {
+  font-family: "Oswald-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.form-info__input::placeholder {
+  opacity: 2;
+  color: #444444;
+}
+
