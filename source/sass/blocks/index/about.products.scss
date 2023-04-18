@@ -1,6 +1,23 @@
+.about-products {
+  padding: 0 10px;
+}
+
 .about-products__list {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.about-products__item {
+  display: flex;
+  gap: 20px;
+}
+
+.about-products__item:last-child {
+  margin: 0 0 53px 0;
 }
 
 .about-products__title {
@@ -8,8 +25,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
-  margin: 0;
+  margin: 0 0 40px 0;
   padding: 0;
 }
 
@@ -21,4 +37,5 @@
   color: #444444;
   margin: 0;
   padding: 0;
+  align-self: center;
 }

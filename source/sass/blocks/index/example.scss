@@ -1,12 +1,15 @@
 .example {
+  padding: 25px 20px 40px 20px;
   background-color: #eaeaea;
 }
+
 
 .example__title {
   font-family: "Oswald-Medium", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0 0 40px 0;
 }
 
 .example__subtitle {
@@ -15,6 +18,12 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0 0 20px 0;
+}
+
+.example-slider__container {
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 }
 
 .example-slider__title {
@@ -23,6 +32,7 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  margin: 0;
 }
 
 .example-slider__subtitle {
@@ -31,6 +41,7 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  margin: 0 0 20px 0;
 }
 
 .example-cost__title {
@@ -38,4 +49,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  margin: 0 0 20px;
+}
+
+.example-slider {
+  display: flex;
+  justify-content: space-between;
 }
