@@ -1,9 +1,7 @@
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("../../../img/index-img/index-bg-cat.png");
-  background-repeat: no-repeat;
+
+.xxxx {
+  position: relative;
+  z-index: 1;
 }
 
 .hero__title {
@@ -15,6 +13,7 @@
   padding: 27px 14px 23px 17px;
   margin: 0;
   color: #ffffff;
+  position: absolute;
 }
 
 .hero__subtitle {
@@ -22,10 +21,14 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  margin: 0 0 17px 0;
+  margin: 0;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  position: absolute;
+  top: 124px;
+  left: 0;
+  right: 0;
 }
 
 .hero__link {
@@ -33,4 +36,8 @@
   padding: 11px 44px;
   width: 280px;
   margin: 0 0 20px 0;
+}
+
+.hero__image-bg {
+  z-index: 0;
 }

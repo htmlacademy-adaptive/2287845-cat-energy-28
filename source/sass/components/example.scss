@@ -24,6 +24,12 @@
 .example-slider__container {
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  min-width: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
 }
 
 .example-slider__title {
@@ -33,6 +39,7 @@
   line-height: 24px;
   text-align: center;
   margin: 0;
+  padding-top: 15px;
 }
 
 .example-slider__subtitle {
@@ -41,7 +48,11 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  margin: 0 0 20px 0;
+  color: #444444;
+  margin: 0 0 -20px 0;
+  max-width: 87px;
+  background-color: #eaeaea;
+  padding: 5px;
 }
 
 .example-cost__title {
@@ -49,10 +60,16 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  margin: 0 0 20px;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .example-slider {
   display: flex;
   justify-content: space-between;
+}
+
+.example-cost {
+  margin: 20px 0 0 0;
 }

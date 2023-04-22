@@ -1,3 +1,9 @@
+.form-info {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .form-info__span {
   font-family: "Oswald-Medium", sans-serif;
   font-weight: 400;
@@ -7,23 +13,39 @@
 }
 
 .form-info__text {
-  font-family: "Oswald-Medium", sans-serif;
+  font-family: "Oswald-Regular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0 0 39px 0;
+  padding: 0;
 }
 
 .form-info__input {
-  font-family: "Oswald-Medium", sans-serif;
+  font-family: "Oswald-Regular", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border-style: none;
+  border: 1px solid #e7e7e7;
 }
 
 .form-info__input::placeholder {
   opacity: 2;
   color: #444444;
+}
+
+.form-info__label {
+  display: flex;
+}
+
+.form-info__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }

@@ -5,6 +5,11 @@
   padding: 10px 20px 17px 20px;
 }
 
+.header--form {
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 0 27px 0;
+}
+
 .header__logo {
   display: flex;
   align-items: center;
@@ -14,7 +19,7 @@
   margin: 0 57px 0 0;
 }
 
-.nav-list__link {
+.nav__link {
   font-family: "Oswald-Medium", sans-serif;
   font-weight: 500;
   font-size: 20px;
