@@ -1,0 +1,9 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright__text {
+  @include font(16px, 19px, $dark-gray, 400);
+  margin: 0;
+}

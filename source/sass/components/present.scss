@@ -1,15 +1,9 @@
 .present {
-  background-image: url("../../../img/catalog-img/catalog-green-bg.png");
+  background-image: url("../../img/catalog-img/catalog-green-bg.jpg");
   background-repeat: no-repeat;
-  width: 280px;
-  height: 290px;
 }
 
 .present__description {
-  font-family: "Lato-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #ffffff;
+  @include font(16px, 20px, $white, 400);
   margin: 0;
 }

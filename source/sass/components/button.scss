@@ -1,13 +1,10 @@
 .button {
-  font-family: "Oswald-Medium", sans-serif;
-  background-color: #68b738;
-  text-align: center;
-  padding: 8px 44px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 18px, $white, 400);
+  font-family: $fontSecondary;
+  background-color: $green;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
+  text-align: center;
+  padding: 8px 44px;
   border: none;
 }

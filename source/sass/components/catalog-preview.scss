@@ -20,10 +20,8 @@
 }
 
 .catalog-preview__item-title {
-  font-family: "Oswald-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
+  @include font(24px, 37px, $black, 400);
+  font-family: $fontSecondary;
   margin: 0 52px 0 91px;
   position: absolute;
   align-self: center;
@@ -31,23 +29,16 @@
 }
 
 .catalog-preview__item-subtitle {
-  font-family: "Lato-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
+  @include font(14px, 18px, $dark-gray, 400);
   margin: 0 0 19px 0;
   padding: 22px 0 23px 0;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .catalog-preview__item-link {
-  font-family: "Oswald-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+  @include font(16px, 16px, $black, 400);
+  font-family: $fontSecondary;
   text-decoration: none;
-  color: #000000;
   text-transform: uppercase;
 }
 

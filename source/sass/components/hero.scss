@@ -1,43 +1,28 @@
 
 .xxxx {
-  position: relative;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__title {
-  font-family: "Oswald-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include font(36px, 36px, $white, 400);
+  font-family: $fontSecondary;
   text-align: center;
   padding: 27px 14px 23px 17px;
   margin: 0;
-  color: #ffffff;
-  position: absolute;
 }
 
 .hero__subtitle {
-  font-family: "Oswald-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  @include font(14px, 14px, $white, 400);
+  font-family: $fontSecondary;
   margin: 0;
   text-align: center;
-  color: #ffffff;
   text-transform: uppercase;
-  position: absolute;
-  top: 124px;
-  left: 0;
-  right: 0;
 }
 
 .hero__link {
   text-align: center;
   padding: 11px 44px;
-  width: 280px;
+  width: 100%;
   margin: 0 0 20px 0;
-}
-
-.hero__image-bg {
-  z-index: 0;
 }

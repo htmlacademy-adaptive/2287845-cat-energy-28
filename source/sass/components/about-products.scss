@@ -28,11 +28,7 @@
 }
 
 .about-products__subtitle {
-  font-family: "Lato-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
+  @include font(14px, 18px, $dark-gray, 400);
   margin: 0;
   padding: 0;
   align-self: center;

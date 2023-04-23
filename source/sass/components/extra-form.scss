@@ -1,13 +1,9 @@
 .extra-form__title {
-  font-family: "Oswald-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
+  @include font(24px, 26px, $black, 400);
+  font-family: $fontSecondary;
 }
 
 .extra-form__text {
-  font-family: "Oswald-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  @include font(16px, 18px, $black, 400);
+  font-family: $fontSecondary;
 }

@@ -1,69 +1,45 @@
 .catalog__title {
-  font-family: "Oswald-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(36px, 36px, $black, 400);
+  font-family: $fontSecondary;
   margin: 0;
 }
 
 .catalog__item-heading {
-  font-family: "Oswald-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #222222;
+  @include font(16px, 20px, $dark-gray2, 400);
+  font-family: $fontSecondary;
+  text-transform: uppercase;
 }
 
 .catalog__item-terms {
-  font-family: "Lato-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
+  @include font(12px, 16px, $dark-gray, 400);
 }
 
 .catalog__item-description {
-  font-family: "Lato-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
+  @include font(12px, 16px, $dark-gray, 400);
 }
 
 .catalog__item-link {
-  background-color: #68b738;
-  font-family: "Oswald-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  @include font(16px, 20px, $white, 400);
+  font-family: $fontSecondary;
   text-align: center;
   text-decoration: none;
-  color: #ffffff;
   padding: 10px 109px;
+  background-color: #68b738;
+  text-transform: uppercase;
 }
 
 .catalog-add__title {
-  font-family: "Oswald-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
+  @include font(16px, 20px, $black-2, 400);
+  font-family: $fontSecondary;
 }
 
 .catalog-add__subtitle {
-  font-family: "Lato-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: #444444;
+  @include font(12px, 16px, $dark-gray, 400);
 }
 
 .catalog-add__show {
-  font-family: "Oswald-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  color: #444444;
+  @include font(16px, 20px, $dark-gray, 400);
+  font-family: $fontSecondary;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #f2f2f2;

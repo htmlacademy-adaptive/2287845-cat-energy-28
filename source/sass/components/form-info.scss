@@ -5,30 +5,23 @@
 }
 
 .form-info__span {
-  font-family: "Oswald-Medium", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include font(14px, 18px, $black, 400);
+  font-family: $fontSecondary;
   text-transform: uppercase;
 }
 
 .form-info__text {
-  font-family: "Oswald-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  @include font(16px, 18px, $dark-gray, 400);
+  font-family: $fontSecondary;
   text-transform: uppercase;
   margin: 0 0 39px 0;
   padding: 0;
 }
 
 .form-info__input {
-  font-family: "Oswald-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 18px;
+  @include font(16px, 18px, $dark-gray, 400);
+  font-family: $fontSecondary;
   text-transform: uppercase;
-  color: #444444;
   border-style: none;
   border: 1px solid #e7e7e7;
 }
