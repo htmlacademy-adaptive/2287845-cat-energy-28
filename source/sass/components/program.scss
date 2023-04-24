@@ -11,8 +11,3 @@
   text-align: center;
   align-self: flex-start;
 }
-
-.program-form__text {
-  @include font(14px, 16px, $black, 400);
-  margin: 0;
-}

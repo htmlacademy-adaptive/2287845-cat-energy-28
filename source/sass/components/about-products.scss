@@ -14,10 +14,10 @@
 .about-products__item {
   display: flex;
   gap: 20px;
-}
 
-.about-products__item:last-child {
-  margin: 0 0 53px 0;
+  &:last-child {
+    margin: 0 0 53px 0;
+  }
 }
 
 .about-products__title {
@@ -28,14 +28,14 @@
 }
 
 .about-products__subtitle {
-  @include font(14px, 18px, $dark-gray, 400);
+  @include font(14px, 18px, $grey-6, 400);
   margin: 0;
   padding: 0;
   align-self: center;
 }
 
-.xx {
-  background-color: #68b738;
+.about-products__wrapper {
+  background-color: $green;
   width: 60px;
   height: 60px;
   display: flex;

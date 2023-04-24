@@ -5,15 +5,15 @@
 }
 
 .additional__item-heading {
-  @include font(16px, 16px, $dark-gray2, 400);
+  @include font(16px, 16px, $grey-7, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
 }
 
 .additional__item-terms {
-  @include font(14px, 14px, $dark-gray, 400);
+  @include font(14px, 14px, $grey-6, 400);
 }
 
 .additional__item-description {
-  @include font(14px, 14px, $dark-gray, 400);
+  @include font(14px, 14px, $grey-6, 400);
 }

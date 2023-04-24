@@ -4,6 +4,6 @@
 }
 
 .comment-form__description {
-  @include font(16px, 18px, $dark-gray, 400);
+  @include font(16px, 18px, $grey-6, 400);
   font-family: $fontSecondary;
 }

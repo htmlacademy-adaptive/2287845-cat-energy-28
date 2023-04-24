@@ -11,7 +11,7 @@
 }
 
 .form-info__text {
-  @include font(16px, 18px, $dark-gray, 400);
+  @include font(16px, 18px, $grey-6, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
   margin: 0 0 39px 0;
@@ -19,16 +19,16 @@
 }
 
 .form-info__input {
-  @include font(16px, 18px, $dark-gray, 400);
+  @include font(16px, 18px, $grey-6, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
   border-style: none;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $platinum;
 }
 
 .form-info__input::placeholder {
-  opacity: 2;
-  color: #444444;
+  opacity: 1;
+  color: $grey-6;
 }
 
 .form-info__label {

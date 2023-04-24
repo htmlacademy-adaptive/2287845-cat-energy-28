@@ -5,17 +5,17 @@
 }
 
 .catalog__item-heading {
-  @include font(16px, 20px, $dark-gray2, 400);
+  @include font(16px, 20px, $grey-7, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
 }
 
 .catalog__item-terms {
-  @include font(12px, 16px, $dark-gray, 400);
+  @include font(12px, 16px, $grey-6, 400);
 }
 
 .catalog__item-description {
-  @include font(12px, 16px, $dark-gray, 400);
+  @include font(12px, 16px, $grey-6, 400);
 }
 
 .catalog__item-link {
@@ -24,24 +24,6 @@
   text-align: center;
   text-decoration: none;
   padding: 10px 109px;
-  background-color: #68b738;
+  background-color: $green;
   text-transform: uppercase;
-}
-
-.catalog-add__title {
-  @include font(16px, 20px, $black-2, 400);
-  font-family: $fontSecondary;
-}
-
-.catalog-add__subtitle {
-  @include font(12px, 16px, $dark-gray, 400);
-}
-
-.catalog-add__show {
-  @include font(16px, 20px, $dark-gray, 400);
-  font-family: $fontSecondary;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: #f2f2f2;
-  padding: 10px 94px;
 }
