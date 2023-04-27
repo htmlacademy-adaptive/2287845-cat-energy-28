@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.form-info__span {
+.form-info__text-content {
   @include font(14px, 18px, $black, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
