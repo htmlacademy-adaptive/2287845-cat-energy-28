@@ -1,5 +1,7 @@
 .about-products {
   padding: 0 20px;
+  margin: 0 auto;
+  max-width: 320px;
 }
 
 .about-products__list {
@@ -21,7 +23,7 @@
 }
 
 .about-products__title {
-  @include font(36px, 40px, $white, 400);
+  @include font(36px, 40px, $black, 400);
   font-family: $fontSecondary;
   margin: 0 0 40px 0;
   padding: 0;

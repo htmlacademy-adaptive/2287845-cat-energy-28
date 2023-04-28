@@ -1,8 +1,15 @@
-
-.hero__wrapper {
+.hero__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
+.hero__wrapper {
+  background-image: url("../../img/index-img/index-bg-cat.jpg");
+  background-repeat: no-repeat;
+  min-height: 302px;
+}
+
 
 .hero__title {
   @include font(36px, 36px, $white, 400);
@@ -10,6 +17,8 @@
   text-align: center;
   padding: 27px 14px 23px 17px;
   margin: 0;
+  width: 320px;
+  align-self: center;
 }
 
 .hero__subtitle {
@@ -22,7 +31,12 @@
 
 .hero__link {
   text-align: center;
-  padding: 11px 44px;
-  width: 100%;
+  padding: 11px 74px;
+  max-width: 320px;
   margin: 0 0 20px 0;
+}
+
+.hero__image {
+  margin-top: -136px;
+  margin-bottom: 3px;
 }

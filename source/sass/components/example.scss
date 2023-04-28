@@ -1,6 +1,8 @@
 .example {
   padding: 25px 20px 40px 20px;
   background-color: $grey-8;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .example__title {
