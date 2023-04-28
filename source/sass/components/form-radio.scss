@@ -1,0 +1,5 @@
+.form-radio__description {
+  @include font(16px, 18px, $black-2, 400);
+  font-family: $fontSecondary;
+  text-transform: uppercase;
+}

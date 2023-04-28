@@ -1,0 +1,15 @@
+.example {
+  padding: 25px 20px 40px 20px;
+  background-color: $grey-8;
+}
+
+.example__title {
+  @include font(36px, 40px, $black, 400);
+  font-family: $fontSecondary;
+  margin: 0 0 40px 0;
+}
+
+.example__subtitle {
+  @include font(14px, 18px, $grey-6, 400);
+  margin: 0 0 20px 0;
+}

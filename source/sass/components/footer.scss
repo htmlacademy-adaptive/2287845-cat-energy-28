@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: $grey;
+  padding: 37px 20px;
+}
+
+.footer__logo {
+  text-align: center;
+  border-bottom: 1px solid $grey-5;
+  padding: 0 0 20px 0;
+}
+
+.footer__social {
+  border-bottom: $grey-5;
+}

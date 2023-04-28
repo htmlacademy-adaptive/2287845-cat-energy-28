@@ -1,0 +1,10 @@
+.button {
+  @include font(14px, 18px, $white, 400);
+  font-family: $fontSecondary;
+  background-color: $green;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 8px 44px;
+  border: none;
+}

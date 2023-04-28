@@ -1,0 +1,9 @@
+.present {
+  background-image: url("../../img/catalog-img/catalog-green-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.present__description {
+  @include font(16px, 20px, $white, 400);
+  margin: 0;
+}

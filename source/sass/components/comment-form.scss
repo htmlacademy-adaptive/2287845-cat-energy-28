@@ -1,0 +1,9 @@
+.comment-form__text-content {
+  @include font(24px, 26px, $black, 400);
+  font-family: $fontSecondary;
+}
+
+.comment-form__description {
+  @include font(16px, 18px, $grey-6, 400);
+  font-family: $fontSecondary;
+}

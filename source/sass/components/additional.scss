@@ -1,0 +1,19 @@
+.additional__title {
+  @include font(24px, 24px, $black, 400);
+  font-family: $fontSecondary;
+  margin: 0;
+}
+
+.additional__item-heading {
+  @include font(16px, 16px, $grey-7, 400);
+  font-family: $fontSecondary;
+  text-transform: uppercase;
+}
+
+.additional__item-terms {
+  @include font(14px, 14px, $grey-6, 400);
+}
+
+.additional__item-description {
+  @include font(14px, 14px, $grey-6, 400);
+}
