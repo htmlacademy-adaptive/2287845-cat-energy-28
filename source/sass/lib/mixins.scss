@@ -1,0 +1,7 @@
+@mixin font($size, $height, $color, $weight) {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  font-weight: $weight;
+}

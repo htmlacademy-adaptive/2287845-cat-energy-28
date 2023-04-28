@@ -1,0 +1,15 @@
+.contacts__container {
+  display: flex;
+  padding: 26px 20px;
+}
+
+.contacts__title {
+  @include font(16px, 20px, $black-2, 400);
+  font-family: $fontSecondary;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  @include font(14px, 20px, $grey-6, 400);
+}

@@ -1,0 +1,20 @@
+.contacts-form__legend {
+  @include font(24px, 26px, $black, 400);
+  font-family: $fontSecondary;
+}
+
+.contacts-form__text {
+  @include font(16px, 18px, $grey-6, 400);
+  font-family: $fontSecondary;
+  text-transform: uppercase;
+  margin: 0 0 39px 0;
+  padding: 0;
+}
+
+.contacts-form__data {
+  @include font(16px, 18px, $grey-6, 400);
+  font-family: $fontSecondary;
+  text-transform: uppercase;
+  border-style: none;
+  border: 1px solid $platinum;
+}

@@ -1,0 +1,29 @@
+.catalog__title {
+  @include font(36px, 36px, $black, 400);
+  font-family: $fontSecondary;
+  margin: 0;
+}
+
+.catalog__item-heading {
+  @include font(16px, 20px, $grey-7, 400);
+  font-family: $fontSecondary;
+  text-transform: uppercase;
+}
+
+.catalog__item-terms {
+  @include font(12px, 16px, $grey-6, 400);
+}
+
+.catalog__item-description {
+  @include font(12px, 16px, $grey-6, 400);
+}
+
+.catalog__item-link {
+  @include font(16px, 20px, $white, 400);
+  font-family: $fontSecondary;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 109px;
+  background-color: $green;
+  text-transform: uppercase;
+}
