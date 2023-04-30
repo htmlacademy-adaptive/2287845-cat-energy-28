@@ -1,6 +1,9 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 0;
+  border-top: 1px solid $grey-5;
 }
 
 .copyright__text {

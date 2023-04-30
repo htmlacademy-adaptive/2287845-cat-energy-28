@@ -2,11 +2,24 @@
   @include font(20px, 20px, $black, 500);
   font-family: $fontSecondary;
   text-decoration: none;
+  text-transform: uppercase;
+  padding: 22px 20px 24px 20px;
+  display: block;
 }
 
 
 .nav__list {
+  text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+
+.nav__item {
+  border-top: 1px solid $grey-9;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-9;
+  }
 }

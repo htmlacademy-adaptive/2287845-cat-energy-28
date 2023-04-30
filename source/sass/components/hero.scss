@@ -1,3 +1,4 @@
+
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -5,20 +6,34 @@
 }
 
 .hero__wrapper {
+  position: relative;
   background-image: url("../../img/index-img/index-bg-cat.jpg");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 302px;
-}
 
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
 
 .hero__title {
   @include font(36px, 36px, $white, 400);
   font-family: $fontSecondary;
   text-align: center;
   padding: 27px 14px 23px 17px;
-  margin: 0;
+  margin: 0 auto;
   width: 320px;
-  align-self: center;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__subtitle {
@@ -27,16 +42,19 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
 }
 
 .hero__link {
   text-align: center;
-  padding: 11px 74px;
-  max-width: 320px;
+  padding: 11px 11px;
+  width: 100%;
   margin: 0 0 20px 0;
 }
 
 .hero__image {
   margin-top: -136px;
   margin-bottom: 3px;
+  z-index: 2;
 }
