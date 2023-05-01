@@ -3,3 +3,17 @@
   font-family: $fontSecondary;
   text-transform: uppercase;
 }
+
+.form-radio {
+  border: none;
+  padding: 0 0 19px 0;
+  margin: 0 0 26px 0;
+  border-bottom: 1px solid $grey-5;
+}
+
+.form-radio__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}

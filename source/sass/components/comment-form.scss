@@ -1,9 +1,27 @@
+.comment-form {
+  border: 0;
+  padding: 0;
+  margin: 0 0 23px 0;
+}
+
+.comment-form__text {
+  padding: 0;
+  margin: 0;
+}
+
 .comment-form__text-content {
   @include font(24px, 26px, $black, 400);
   font-family: $fontSecondary;
+  display: inline-block;
+  margin: 0 0 38px 0;
+  padding: 0;
 }
 
 .comment-form__description {
   @include font(16px, 18px, $grey-6, 400);
   font-family: $fontSecondary;
+  text-transform: uppercase;
+  border: 1px solid $platinum;
+  padding: 9px 0 15px 15px;
+  margin: 0;
 }

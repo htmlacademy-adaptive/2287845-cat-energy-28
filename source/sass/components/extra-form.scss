@@ -1,6 +1,28 @@
+.extra-form {
+  border: 0;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.extra-form__legend {
+  padding: 0;
+  margin: 0;
+}
+
+.extra-form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .extra-form__title {
   @include font(24px, 26px, $black, 400);
   font-family: $fontSecondary;
+  display: inline-block;
+  margin: 0 0 34px 0;
 }
 
 .extra-form__text {

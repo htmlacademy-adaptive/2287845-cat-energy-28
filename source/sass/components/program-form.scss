@@ -1,4 +1,11 @@
 .program-form__text {
   @include font(14px, 16px, $black, 400);
   margin: 0;
+  text-align: center;
+}
+
+.program-form__button {
+  display: block;
+  padding: 11px 87px;
+  margin: 0 auto 21px auto;
 }
