@@ -1,9 +1,38 @@
-.present {
+.present__container {
+  position: relative;
   background-image: url("../../img/catalog-img/catalog-green-bg.jpg");
   background-repeat: no-repeat;
+  background-position: center;
+  min-height: 290px;
+
+  &::before {
+    content: "";
+    display: block;
+    min-width: 280px;
+    height: 100%;
+    background-color: rgba(104, 183, 56, 0.85);
+    position: absolute;
+  }
 }
 
 .present__description {
   @include font(16px, 20px, $white, 400);
   margin: 0;
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
+
+.present__image {
+  position: relative;
+  z-index: 1;
+}
+
+.present__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  padding: 59px 61px 43px 58px;
+}
+

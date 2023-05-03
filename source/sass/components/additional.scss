@@ -1,13 +1,14 @@
 .additional__title {
   @include font(24px, 24px, $black, 400);
   font-family: $fontSecondary;
-  margin: 0;
+  margin: 0 0 49px 0;
 }
 
 .additional__item-heading {
   @include font(16px, 16px, $grey-7, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
+  margin: 0 0 13px 0;
 }
 
 .additional__item-terms {
@@ -16,4 +17,30 @@
 
 .additional__item-description {
   @include font(14px, 14px, $grey-6, 400);
+  margin: 0;
+}
+
+.additional__list {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  list-style-type: none;
+  margin: 0 0 54px 0;
+  padding: 0;
+}
+
+.additional__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.additional__item-list {
+  margin: 0;
+}
+
+.additional__item-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 14px 0;
+  width: 280px;
 }
