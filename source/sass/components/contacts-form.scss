@@ -1,5 +1,6 @@
 .contacts-form {
   border: 0;
+  margin: 0;
 }
 
 .contacts-form__legend {
@@ -22,10 +23,12 @@
   @include font(16px, 18px, $grey-6, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
+  display: inline;
   border: 1px solid $platinum;
-  padding: 14px 14px 13px 15px;
+  padding: 12px 0 12px 15px;
   width: 100%;
   margin: 0;
+  position: relative;
 }
 
 .contacts-form__list {
@@ -40,5 +43,15 @@
 .contacts-form__input {
   display: flex;
   align-items: center;
+  max-width: 280px;
   gap: 10px;
+}
+
+.contacts-form__img {
+  content: "";
+  background-image: url("../../img/email-form.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
 }
