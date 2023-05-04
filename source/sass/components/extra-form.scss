@@ -29,3 +29,53 @@
   @include font(16px, 18px, $black, 400);
   font-family: $fontSecondary;
 }
+
+.extra-form__label {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.extra-form__checkbox {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  margin: 0;
+  appearance: none;
+}
+
+.extra-form__mark {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $grey-3;
+
+  &::before {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 26px;
+    height: 26px;
+    content: "";
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.extra-form__checkbox:checked ~ .extra-form__mark::before {
+  display: block;
+}
+
+.extra-form__label:hover .extra-form__mark {
+  background-color: #bababa;
+}
