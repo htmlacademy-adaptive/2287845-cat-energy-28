@@ -9,7 +9,7 @@
 .catalog__list {
   display: flex;
   flex-direction: column;
-  gap: 33px;
+  gap: 8px;
   list-style-type: none;
   margin: 0 0 50px 0;
   padding: 0;
@@ -19,6 +19,8 @@
   display: flex;
   flex-wrap: wrap;
   row-gap: 13px;
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid $grey-3;
 }
 
 .catalog__item-img {
@@ -57,7 +59,7 @@
   font-family: $fontSecondary;
   text-align: center;
   text-decoration: none;
-  padding: 10px 109px;
+  padding: 10px 110px;
   margin: 0;
   background-color: $green;
   text-transform: uppercase;
