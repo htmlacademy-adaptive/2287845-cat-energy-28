@@ -1,14 +1,7 @@
-.form-radio__description {
-  @include font(16px, 18px, $black-2, 400);
-  font-family: $fontSecondary;
-  text-transform: uppercase;
-}
-
 .form-radio {
   border: none;
-  padding: 0 0 19px 0;
-  margin: 0 0 26px 0;
-  border-bottom: 1px solid $grey-5;
+  padding: 0 0 26px 0;
+  margin: 0;
 }
 
 .form-radio__list {
@@ -16,6 +9,20 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
+  padding: 0 0 19px 0;
+  margin: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: 100vw;
+    background-color: $grey-2;
+    transform: translateX(-50%);
+  }
 }
 
 .form-radio__radio {
@@ -50,14 +57,21 @@
   &::before {
     display: none;
     position: absolute;
-    top: 23%;
-    left: 23%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 10px;
     height: 10px;
     content: "";
     background-color: $green;
     border-radius: 50%;
   }
+}
+
+.form-radio__description {
+  @include font(16px, 18px, $black-2, 400);
+  font-family: $fontSecondary;
+  text-transform: uppercase;
 }
 
 
