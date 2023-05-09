@@ -5,8 +5,12 @@
   text-transform: uppercase;
   padding: 22px 20px 24px 20px;
   display: block;
-}
 
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 
 .nav__list {
   text-align: center;
@@ -14,7 +18,6 @@
   padding: 0;
   list-style: none;
 }
-
 
 .nav__item {
   border-top: 1px solid $grey-9;
