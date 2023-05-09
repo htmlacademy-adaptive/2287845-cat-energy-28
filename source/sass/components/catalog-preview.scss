@@ -59,11 +59,21 @@
   margin: 0 0 22px;
   align-self: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalog-preview__item-description {
   @include font(14px, 18px, $grey-6, 400);
   margin: 0 0 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .catalog-preview__item-link {
@@ -76,4 +86,9 @@
   gap: 15px;
   border-top: 1px solid $grey-5;
   padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

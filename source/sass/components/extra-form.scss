@@ -23,11 +23,21 @@
   font-family: $fontSecondary;
   display: inline-block;
   margin: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .extra-form__text {
   @include font(16px, 18px, $black, 400);
   font-family: $fontSecondary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .extra-form__label {

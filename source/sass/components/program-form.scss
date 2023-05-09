@@ -2,10 +2,21 @@
   @include font(14px, 16px, $black, 400);
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .program-form__button {
   display: block;
   padding: 11px 87px;
   margin: 0 auto 21px auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0;
+    padding: 13px 45px;
+  }
 }

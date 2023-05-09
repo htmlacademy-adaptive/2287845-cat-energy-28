@@ -2,4 +2,9 @@
   @include font(36px, 36px, $black, 400);
   font-family: $fontSecondary;
   margin: 0 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

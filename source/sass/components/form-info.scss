@@ -13,6 +13,11 @@
   @include font(14px, 18px, $black, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-info__text {
@@ -23,6 +28,11 @@
   margin: 0;
   padding: 0;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-info__input {
@@ -33,6 +43,11 @@
   padding: 14px 5px 13px 20px;
   margin: 0;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form-info__input::placeholder {

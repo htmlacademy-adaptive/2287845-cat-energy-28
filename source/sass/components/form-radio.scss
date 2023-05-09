@@ -72,6 +72,11 @@
   @include font(16px, 18px, $black-2, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 

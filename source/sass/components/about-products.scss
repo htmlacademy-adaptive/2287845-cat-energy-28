@@ -22,6 +22,11 @@
   font-family: $fontSecondary;
   margin: 0 0 40px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .about-products__subtitle {
@@ -29,6 +34,11 @@
   margin: 0;
   padding: 0;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .about-products__wrapper {
