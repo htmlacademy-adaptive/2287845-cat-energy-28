@@ -8,6 +8,12 @@
     border-bottom: 1px solid #d9d9d9;
     margin: 0 0 27px 0;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 94px;
+    padding: 0 30px;
+  }
 }
 
 .header__logo {
@@ -25,6 +31,13 @@
   width: 320px;
   margin: 0 auto;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .header__menu-button {
@@ -43,4 +56,5 @@
 
 .header__nav {
   display: block;
+  flex: 1;
 }

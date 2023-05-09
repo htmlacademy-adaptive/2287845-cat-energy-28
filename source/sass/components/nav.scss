@@ -7,8 +7,10 @@
   display: block;
 
   @media (min-width: $tablet-width) {
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
+    padding: 18px 0 0 0;
   }
 }
 
@@ -17,6 +19,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 36px;
+  }
 }
 
 .nav__item {
@@ -24,5 +31,12 @@
 
   &:last-child {
     border-bottom: 1px solid $grey-9;
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $green;
+      margin-bottom: -10px;
+    }
   }
 }

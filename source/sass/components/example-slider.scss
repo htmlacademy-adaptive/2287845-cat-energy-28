@@ -1,6 +1,14 @@
 .example-slider {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 34px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    gap: 42px;
+    align-items: center;
+  }
 }
 
 .example-slider__container {
@@ -38,5 +46,22 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+  }
+}
+
+.example-slider__cost {
+  @include font(14px, 20px, $black, 400);
+  font-family: $fontSecondary;
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 174px;
+    text-align: right;
+    margin-left: auto;
   }
 }

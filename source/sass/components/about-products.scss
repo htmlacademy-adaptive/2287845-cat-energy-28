@@ -6,6 +6,12 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .about-products__item {
@@ -14,6 +20,13 @@
 
   &:last-child {
     margin: 0 0 53px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    max-width: 249px;
+    gap: 37px;
+    padding: 40px 26px 57px 0;
   }
 }
 
@@ -49,4 +62,9 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }

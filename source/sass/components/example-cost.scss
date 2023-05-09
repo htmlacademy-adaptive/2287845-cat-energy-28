@@ -1,16 +1,8 @@
 .example-cost {
-  margin: 20px 0 0 0;
-}
-
-.example-cost__title {
-  @include font(14px, 20px, $black, 400);
-  font-family: $fontSecondary;
+  margin: 104px 0 0 0;
   text-align: center;
-  margin: 0;
-  text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-  }
+  /* @media (min-width: $tablet-width) {
+    background-color: $grey-8;
+  }*/
 }

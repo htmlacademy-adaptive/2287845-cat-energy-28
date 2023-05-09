@@ -1,6 +1,10 @@
 .example {
   padding: 25px 0 40px 0;
   background-color: $grey-8;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, #eaeaea 32%, #ffffff 32%);
+  }
 }
 
 .example__title {
