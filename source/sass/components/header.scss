@@ -2,6 +2,11 @@
   &--form {
     border-bottom: 1px solid $grey-5;
     margin: 0 0 27px 0;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      margin: 0 0 65px 0;
+    }
   }
 
   &--catalog {

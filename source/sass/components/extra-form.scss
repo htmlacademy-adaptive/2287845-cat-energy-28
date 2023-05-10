@@ -2,6 +2,11 @@
   border: 0;
   padding: 0;
   margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin: 0;
+  }
 }
 
 .extra-form__legend {
@@ -16,6 +21,14 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 69px 95px 72px 0;
+    column-gap: 100px;
+    row-gap: 42px;
+  }
 }
 
 .extra-form__title {
@@ -46,6 +59,10 @@
   cursor: pointer;
   align-items: center;
   column-gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+  }
 }
 
 .extra-form__checkbox {

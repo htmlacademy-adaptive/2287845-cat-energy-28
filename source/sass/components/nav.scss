@@ -29,8 +29,16 @@
 .nav__item {
   border-top: 1px solid $grey-9;
 
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
   &:last-child {
     border-bottom: 1px solid $grey-9;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
   &--active {

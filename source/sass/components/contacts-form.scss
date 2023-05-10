@@ -2,6 +2,10 @@
   border: 0;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+  }
 }
 
 .contacts-form__legend {
@@ -39,7 +43,7 @@
   padding: 12px 0 12px 15px;
   width: 100%;
   margin: 0;
-  position: relative;
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -54,20 +58,25 @@
   list-style-type: none;
   margin: 0 0 24px 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
+    margin: 0 0 65px 0;
+  }
 }
 
 .contacts-form__input {
   display: flex;
   align-items: center;
-  max-width: 280px;
   gap: 10px;
+  position: relative;
 }
 
 .contacts-form__img {
-  content: "";
-  background-image: url("../../img/email-form.svg");
-  background-repeat: no-repeat;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    right: 18px;
+  }
 }

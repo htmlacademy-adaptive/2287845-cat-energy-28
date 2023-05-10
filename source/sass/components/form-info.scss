@@ -2,6 +2,11 @@
   border: none;
   padding: 0 0 22px 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin: 0 0 72px 0;
+  }
 }
 
 .form-info__text-container {
@@ -80,5 +85,13 @@
     width: 100vw;
     background-color: $grey-2;
     transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 20px;
   }
 }
