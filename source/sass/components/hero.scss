@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+    padding: 0 0 0 90px;
 
     &.middle-container {
       padding: 0 30px 0 91px;
@@ -78,7 +79,7 @@
     line-height: 20px;
     color: $black;
     text-align: left;
-    margin: 0 0 0 90px;
+    margin: 0 0 49px 90px;
   }
 }
 
@@ -92,9 +93,11 @@
     grid-area: 1/-1;
     align-self: start;
     margin: 0;
+    padding: 14px 20px;
     font-size: 20px;
     line-height: 20px;
     width: fit-content;
+    z-index: 1;
   }
 }
 
@@ -107,6 +110,7 @@
     grid-area: 1/-1;
     justify-self: center;
     margin: 0;
+    transform: translateX(-77px);
     z-index: 0;
   }
 }
