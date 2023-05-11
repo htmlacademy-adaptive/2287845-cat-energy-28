@@ -3,11 +3,30 @@
   font-family: $fontSecondary;
   margin: 0 0 8px 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0 0 23px 0;
+  }
 }
 
 .catalog-add__subtitle {
   @include font(12px, 16px, $grey-6, 400);
   margin: 0 0 21px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 87px 0;
+  }
+}
+
+.catalog-add__text {
+  @media (min-width: $tablet-width) {
+    padding: 0 79px;
+    text-align: center;
+  }
 }
 
 .catalog-add__show {
@@ -27,4 +46,8 @@
 
 .catalog-add__image {
   margin: 25px 0 23px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 52px 0 49px 0;
+  }
 }

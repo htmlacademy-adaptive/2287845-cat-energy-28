@@ -33,14 +33,6 @@
     border: none;
   }
 
-  &:last-child {
-    border-bottom: 1px solid $grey-9;
-
-    @media (min-width: $tablet-width) {
-      border: none;
-    }
-  }
-
   &--active {
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid $green;
