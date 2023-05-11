@@ -20,15 +20,10 @@
     margin: 0 auto;
     max-width: 1220px;
     width: 100%;
+    border: 0;
   }
 }
 
-.hero__container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    padding: 0;
-  }
-}
 
 .header__logo {
   max-width: 191px;

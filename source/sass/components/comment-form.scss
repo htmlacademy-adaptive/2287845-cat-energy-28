@@ -33,9 +33,13 @@
   border: 1px solid $platinum;
   padding: 9px 0 15px 15px;
   margin: 0;
+  width: 100%;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    max-width: 1220px;
+    padding: 10px 0 15px 19px;
   }
 }

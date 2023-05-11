@@ -4,10 +4,21 @@
   gap: 20px;
   background-color: $grey;
   padding: 37px 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
 }
 
 .footer__logo-link {
   display: block;
   text-align: center;
   margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
