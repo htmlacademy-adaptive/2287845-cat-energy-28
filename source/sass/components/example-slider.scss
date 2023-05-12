@@ -9,6 +9,10 @@
     gap: 42px;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 370px;
+  }
 }
 
 .example-slider__container {
@@ -63,5 +67,11 @@
     max-width: 174px;
     text-align: right;
     margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    max-width: unset;
+    text-align: inherit;
   }
 }

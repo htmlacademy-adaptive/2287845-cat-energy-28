@@ -24,9 +24,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    max-width: 249px;
+    max-width: 250px;
     gap: 37px;
     padding: 40px 26px 57px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 31px;
   }
 }
 

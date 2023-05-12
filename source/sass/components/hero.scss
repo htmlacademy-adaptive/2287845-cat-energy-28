@@ -1,3 +1,12 @@
+.hero {
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 
 .hero__container {
   display: flex;
@@ -7,6 +16,9 @@
   @media (min-width: $tablet-width) {
     display: grid;
     padding: 0 0 0 90px;
+    max-width: 1220px;
+    width: 100%;
+    margin: 0 auto;
 
     &.middle-container {
       padding: 0 30px 0 91px;
@@ -34,9 +46,14 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     background: none;
     min-height: auto;
-    margin: 0 0 20px 0;
+    margin: 0 auto;
+    max-width: 1220px;
+    width: 100%;
 
     &::before {
       display: none;

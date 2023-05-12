@@ -7,6 +7,13 @@
   }
 }
 
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .example__title {
   @include font(36px, 40px, $black, 400);
   font-family: $fontSecondary;
