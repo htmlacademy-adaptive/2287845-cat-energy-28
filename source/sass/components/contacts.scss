@@ -6,6 +6,10 @@
 
 .contacts__container {
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+  }
 }
 
 .contacts__text-container {
@@ -16,6 +20,19 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 60px 40px 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 565px;
+    gap: 87px;
+    grid-area: 1/1;
+    justify-self: center;
+    margin: 0;
+    transform: translateY(76px);
+    background-color: #ffffff;
+    position: absolute;
+    left: 104px;
+    padding: 56px 60px 56px 80px;
   }
 }
 
@@ -44,6 +61,12 @@
 .contacts__texts {
   @media (min-width: $tablet-width) {
     width: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
   }
 }
 
