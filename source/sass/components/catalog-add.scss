@@ -9,6 +9,10 @@
     line-height: 22px;
     margin: 0 0 23px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 10px 23px 10px;
+  }
 }
 
 .catalog-add__subtitle {
@@ -27,6 +31,10 @@
     padding: 0 79px;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px;
+  }
 }
 
 .catalog-add__show {
@@ -36,6 +44,11 @@
   text-decoration: none;
   background-color: $grey;
   padding: 10px 95px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 169px;
+    padding: 10px 39px;
+  }
 }
 
 .catalog-add__container {

@@ -7,11 +7,19 @@
     padding: 0 40px;
     margin: 0 0 72px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/1;
+  }
 }
 
 .form-info__text-container {
   padding: 0;
   margin-bottom: 39px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .form-info__text-content {

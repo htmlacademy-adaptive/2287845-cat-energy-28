@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding: 0 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+  }
 }
 
 .contacts-form__legend {
@@ -17,6 +21,10 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
   }
 }
 
@@ -62,6 +70,13 @@
   @media (min-width: $tablet-width) {
     gap: 20px;
     margin: 0 0 65px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(2, 100%);
+    margin: 0 0 67px 0;
   }
 }
 

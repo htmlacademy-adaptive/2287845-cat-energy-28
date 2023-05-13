@@ -8,4 +8,15 @@
     line-height: 60px;
     margin: 65px 0 54px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+}
+
+.program-form__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
