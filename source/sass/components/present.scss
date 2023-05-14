@@ -13,6 +13,12 @@
     background-color: rgba(104, 183, 56, 0.85);
     position: absolute;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+    grid-column: 3/3;
+
+  }
 }
 
 .present__description {
