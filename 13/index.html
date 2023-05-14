@@ -10,7 +10,6 @@
 <body>
 <div class="container">
   <header class="header">
-    <div class="header__container middle-container">
       <div class="header__wrapper">
         <a class="header__logo" href="#">
           <img src="img/logo-mobile.svg" alt="Кэт Энерджи" width="191" height="38">
@@ -19,7 +18,6 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-    </div>
     <nav class="header__nav nav">
       <div class="nav__wrapper">
         <ul class="nav__list">
@@ -27,10 +25,10 @@
             <a class="nav__link" href="#">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Каталог Продукции</a>
+            <a class="nav__link" href="catalog.html">Каталог Продукции</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Подбор Программы</a>
+            <a class="nav__link" href="form.html">Подбор Программы</a>
           </li>
         </ul>
       </div>
@@ -38,51 +36,55 @@
   </header>
   <main class="main">
     <section class="main__section hero">
-      <div class="hero__wrapper">
-        <h1 class="hero__title">Функциональное питание для котов</h1>
-        <h2 class="hero__subtitle">Занялся собой? Займись котом!</h2>
-      </div>
-      <div class="hero__container middle-container">
-        <img class="hero__image" src="img/index-img/index-can-mobile.png" alt="Кэт энерджи про" width="280" height="270">
-        <a class="hero__link button" href="#">подобрать программу</a>
-      </div>
+
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Функциональное питание для котов</h1>
+          <h2 class="hero__subtitle">Занялся собой? Займись котом!</h2>
+        </div>
+        <div class="hero__container">
+          <img class="hero__image" src="img/index-img/index-can-mobile.png" alt="Кэт энерджи про" width="280" height="270">
+          <a class="hero__link button" href="#">подобрать программу</a>
+        </div>
+
     </section>
     <section class="main__section catalog-preview">
       <ul class="catalog-preview__list middle-container">
         <li class="catalog-preview__item">
-          <div class="catalog-preview__wrapper">
-            <div class="catalog-preview__wrapper-image">
-              <img class="catalog-preview__item-image catalog-preview__item-image--cat" src="img/index-img/cat-first.svg" alt="Похудевший Котик" width="50" height="53">
+            <div class="catalog-preview__wrapper">
+              <div class="catalog-preview__wrapper-image">
+                <img class="catalog-preview__item-image catalog-preview__item-image--cat" src="img/index-img/cat-first.svg" alt="Похудевший Котик" width="36" height="50">
+              </div>
+              <h3 class="catalog-preview__item-title">Похудение</h3>
             </div>
-            <h3 class="catalog-preview__item-title">Похудение</h3>
-          </div>
-          <p class="catalog-preview__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по
-            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="catalog-preview__item-link" href="catalog.html">
-            <span>Каталог slim</span>
-            <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
-            </svg>
-          </a>
+            <p class="catalog-preview__item-description">Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="catalog-preview__item-link" href="catalog.html">
+              <span>Каталог slim</span>
+              <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+              </svg>
+            </a>
         </li>
+
         <li class="catalog-preview__item">
-          <div class="catalog-preview__wrapper">
-            <div class="catalog-preview__wrapper-image">
-              <img class="catalog-preview__item-image catalog-preview__item-image--panther" src="img/index-img/cat-second.svg" alt="Котик КАЧОК" width="67" height="28">
+            <div class="catalog-preview__wrapper">
+              <div class="catalog-preview__wrapper-image">
+                <img class="catalog-preview__item-image catalog-preview__item-image--panther" src="img/index-img/cat-second.svg" alt="Котик КАЧОК" width="67" height="28">
+              </div>
+              <h3 class="catalog-preview__item-title">Набор массы</h3>
             </div>
-            <h3 class="catalog-preview__item-title">Набор массы</h3>
-          </div>
-          <p class="catalog-preview__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-            Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="catalog-preview__item-link" href="catalog.html">
-            <span>Каталог Pro</span>
-            <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
-              <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
-            </svg>
-          </a>
+            <p class="catalog-preview__item-description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+              Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="catalog-preview__item-link" href="catalog.html">
+              <span>Каталог Pro</span>
+              <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2"/>
+                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black"/>
+              </svg>
+            </a>
         </li>
+
       </ul>
     </section>
     <section class="main__section about-products">
@@ -135,9 +137,9 @@
             <h3 class="example-slider__title">60 ДНЕЙ</h3>
             <p class="example-slider__subtitle">затрачено времени</p>
           </div>
+          <h4 class="example-slider__cost">Затраты на питание: 15 000 РУБ.</h4>
         </div>
         <div class="example__cost example-cost">
-          <h4 class="example-cost__title">Затраты на питание: 15 000 РУБ. </h4>
           <img class="example-cost__image" src="img/index-img/cat-slide.png" alt="Слайдер котика" width="280" height="256">
         </div>
       </div>
@@ -145,7 +147,7 @@
     <section class="main__section contacts">
       <div class="contacts__container middle-container">
         <div class="contacts__text-container">
-          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
           <div class="contacts__texts">
             <span class="contacts__text">ул. Большая Конюшенная, д. 19/8</span>
             <span class="contacts__text">Санкт-Петербург</span>
