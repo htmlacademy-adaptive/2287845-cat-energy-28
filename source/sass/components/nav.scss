@@ -27,11 +27,11 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 36px;
+    column-gap: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 34px;
+    column-gap: 34px;
   }
 }
 

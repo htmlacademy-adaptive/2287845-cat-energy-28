@@ -1,14 +1,18 @@
 .contacts {
+  display: grid;
   position: relative;
   z-index: 1;
-  background: $white;
+  background: $grey;
 }
 
 .contacts__container {
-  background-color: $white;
-
   @media (min-width: $desktop-width) {
-    display: grid;
+    grid-area: 1 / -1;
+    width: 100%;
+
+    &.middle-container {
+      padding: 0 40px;
+    }
   }
 }
 
@@ -25,13 +29,8 @@
   @media (min-width: $desktop-width) {
     max-width: 565px;
     gap: 87px;
-    grid-area: 1/1;
-    justify-self: center;
-    margin: 0;
-    transform: translateY(76px);
+    margin: 65px 0 0 0;
     background-color: #ffffff;
-    position: absolute;
-    left: 104px;
     padding: 56px 60px 56px 80px;
   }
 }
@@ -74,4 +73,9 @@
   display: block;
   width: 100%;
   height: 362px;
+  grid-row: 2;
+
+  @media (min-width: $desktop-width) {
+    grid-area: 1 / -1;
+  }
 }

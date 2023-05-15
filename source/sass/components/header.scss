@@ -15,7 +15,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    gap: 94px;
+    justify-content: space-between;
     padding: 0 30px;
     margin: 0 auto;
     max-width: 1220px;
@@ -25,7 +25,9 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    gap: 540px;
+    justify-content: space-between;
+    padding: 0 110px;
+    margin: 70px auto 74px auto;
   }
 }
 
@@ -70,5 +72,4 @@
 
 .header__nav {
   display: block;
-  flex: 1;
 }

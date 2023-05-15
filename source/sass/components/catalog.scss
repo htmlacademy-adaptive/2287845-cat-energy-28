@@ -1,16 +1,16 @@
+.catalog__container {
+  &.middle-container {
+    margin: 0 auto 25px auto;
+  }
+}
+
 .catalog__title {
+  overflow: hidden;
+
   @include font(36px, 36px, $black, 400);
   font-family: $fontSecondary;
-  margin: 0 0 19px 0;
   padding-bottom: 41px;
   text-align: center;
-
-  &::after {
-    content: "";
-    width: 100vw;
-    height: 1px;
-    background-color: $grey-5;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -27,33 +27,34 @@
   flex-direction: column;
   gap: 19px;
   list-style-type: none;
-  margin: 0;
+  margin: 41px 0 0 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 60px;
-    margin-bottom: 68px;
     justify-content: space-evenly;
+    margin: 82px 0 68px 0;
   }
 
   @media (min-width: $desktop-width) {
     column-gap: 80px;
     row-gap: 144px;
+    margin: 84px 0 0 0;
   }
 }
 
 .catalog__item {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
   row-gap: 13px;
   position: relative;
-  width: 320px;
   margin: 0 auto;
   padding: 0 0 25px 0;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     gap: 34px;
     flex-direction: column;
     align-items: center;
@@ -62,14 +63,13 @@
     margin: 0;
     padding: 0 0 39px 0;
     background-color: $grey;
-  }
 
-  @media (min-width: $tablet-width) {
     &:last-child {
       background-color: $white;
       border: 2px solid $grey;
     }
   }
+
 
   &::after {
     content: "";
@@ -77,7 +77,7 @@
     bottom: 0;
     left: 50%;
     height: 1px;
-    width: 100vw;
+    width: 200vw;
     background-color: $grey-2;
     transform: translateX(-50%);
 
@@ -113,7 +113,7 @@
   @media (min-width: $tablet-width) {
     min-width: 252px;
     width: 100%;
-    border-bottom: 1px solid #e7e7e7e7;
+    border-bottom: 1px solid $platinum;
     padding: 0 0 9px 0;
   }
 
@@ -167,12 +167,12 @@
   margin: 0;
   background-color: $green;
   text-transform: uppercase;
+  width: fit-content;
   max-width: 280px;
-  width: 100%;
 
   @media (min-width: $tablet-width) {
-    max-width: 248px;
     width: 100%;
+    max-width: 248px;
     padding: 10px 93px;
   }
 
@@ -183,13 +183,11 @@
 }
 
 .catalog__item-descriptions {
-  flex: 1;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     margin: 0;
-    max-width: 252px;
+    max-width: 169px;
   }
 }
 

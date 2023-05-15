@@ -9,15 +9,12 @@
 .additional__title {
   @include font(24px, 24px, $black, 400);
   font-family: $fontSecondary;
-  margin: 0 0 13px 0;
-  border-bottom: 1px solid $grey-3;
-  padding: 0 0 36px;
+  margin: 0 0 36px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 0 36px 80px 36px;
-    margin: 0 0 26px 0;
+    margin: 0 0 26px 37px;
   }
 }
 
@@ -30,7 +27,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin: 0 0 26px 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,20 +42,24 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 131px;
+    padding: 0;
   }
 }
 
 .additional__item-description {
   @include font(14px, 14px, $grey-6, 400);
   margin: 0;
+  min-width: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    min-width: 42px;
   }
 }
 
@@ -68,10 +69,11 @@
   gap: 12px;
   list-style-type: none;
   margin: 0 0 35px 0;
-  padding: 0;
+  padding: 13px 0 0 0;
+  border-top: 1px solid $grey-3;
 
   @media (min-width: $tablet-width) {
-    padding: 0 39px;
+    padding: 26px 39px 0 39px;
     gap: 26px;
   }
 
@@ -89,6 +91,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 0 28px 0;
+    row-gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,7 +99,7 @@
     max-width: 896px;
     gap: 40px;
     align-items: center;
-    padding: 0 0 27px 0;
+    padding: 25px 0 27px 0;
   }
 }
 
@@ -107,11 +110,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 610px;
     width: 100%;
+    max-width: 610px;
     padding: 0;
     align-items: center;
-    gap: 178px;
+    column-gap: 178px;
     justify-content: unset;
   }
 }
@@ -124,16 +127,15 @@
   display: flex;
   justify-content: space-between;
   margin: 0 0 14px 0;
-  width: 280px;
 
   @media (min-width: $tablet-width) {
-    width: unset;
     gap: 55px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 285px;
     gap: 112px;
-    justify-content: unset;
+    justify-content: flex-start;
   }
 }

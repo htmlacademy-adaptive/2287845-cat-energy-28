@@ -10,8 +10,10 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    column-gap: 153px;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 37px;
+    padding-right: 74px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +33,6 @@
     flex-direction: column;
     max-width: 250px;
     gap: 37px;
-    padding: 40px 26px 57px 0;
   }
 
   @media (min-width: $desktop-width) {

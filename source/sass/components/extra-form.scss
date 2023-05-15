@@ -4,7 +4,6 @@
   margin: 0 0 40px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
     margin: 0;
   }
 
@@ -15,7 +14,7 @@
 
 .extra-form__legend {
   padding: 0;
-  margin: 0;
+  margin: 0 0 57px 0;
 }
 
 .extra-form__list {
@@ -35,7 +34,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 61px;
+    margin: 0;
   }
 }
 
@@ -48,7 +47,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 57px 0;
+    margin: 0;
   }
 }
 
@@ -94,6 +93,8 @@
   width: 30px;
   height: 30px;
   border: 1px solid $grey-3;
+  flex-shrink: 0;
+  align-self: flex-start;
 
   &::before {
     display: none;
