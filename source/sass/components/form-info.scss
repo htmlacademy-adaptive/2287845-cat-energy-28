@@ -51,6 +51,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 11px 20px;
+  }
 }
 
 .form-info__input::placeholder {
@@ -90,7 +94,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
+    row-gap: 20px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 18px;
   }
 }
