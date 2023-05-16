@@ -3,7 +3,7 @@
     background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
     max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 82px auto;
   }
 }
 
@@ -24,6 +24,10 @@
       padding: 0 30px 0 91px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .hero__wrapper {
@@ -31,7 +35,7 @@
   background-image: url("../../img/index-img/index-bg-cat.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(69, 68, 72);
   min-height: 302px;
 
   &::before {
@@ -58,6 +62,10 @@
     &::before {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
