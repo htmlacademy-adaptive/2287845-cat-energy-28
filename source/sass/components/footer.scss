@@ -1,15 +1,20 @@
 .footer {
+  background-color: $grey;
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: $grey;
-  padding: 37px 20px;
+  padding-top: 37px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 55px 30px;
+    padding-top: 55px;
+    padding-bottom: 55px;
   }
 }
 

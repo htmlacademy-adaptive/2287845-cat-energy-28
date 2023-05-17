@@ -1,9 +1,9 @@
-.hero {
+
+.hero__content {
+  padding: 0;
+
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto 82px auto;
+    position: relative;
   }
 }
 
@@ -16,7 +16,6 @@
   @media (min-width: $tablet-width) {
     display: grid;
     padding: 0 0 0 90px;
-    max-width: 1220px;
     width: 100%;
     margin: 0 auto;
 
@@ -35,8 +34,9 @@
   background-image: url("../../img/index-img/index-bg-cat.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: rgba(69, 68, 72);
+  background-color: rgba(104, 183, 56, 0.85);
   min-height: 302px;
+  padding: 0 0 150px 0;
 
   &::before {
     content: "";
@@ -55,9 +55,9 @@
     align-items: flex-start;
     background: none;
     min-height: auto;
-    margin: 0 auto;
-    max-width: 1220px;
+    margin: 0;
     width: 100%;
+    padding: 0;
 
     &::before {
       display: none;
@@ -65,7 +65,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    padding: 0 90px;
+    margin-bottom: 52px;
+    row-gap: 40px;
   }
 }
 
@@ -73,17 +75,16 @@
   @include font(36px, 36px, $white, 400);
   font-family: $fontSecondary;
   text-align: center;
-  padding: 27px 14px 23px 17px;
-  margin: 0 auto;
-  width: 320px;
+  padding: 27px 0 23px 0;
   position: relative;
   z-index: 1;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     color: $black;
-    margin: 62px auto 41px 88px;
+    margin: 0;
     width: 416px;
     padding: 0;
     text-align: left;
@@ -104,7 +105,7 @@
     line-height: 20px;
     color: $black;
     text-align: left;
-    margin: 0 0 49px 90px;
+    margin: 0;
   }
 }
 

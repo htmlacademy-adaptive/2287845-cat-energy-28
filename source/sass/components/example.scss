@@ -47,13 +47,3 @@
     margin: 0 0 69px 0;
   }
 }
-
-
-.example-cost__image {
-  @media (min-width: $desktop-width) {
-    position: absolute;
-    top: -8%;
-    left: 56%;
-    width: 560px;
-  }
-}

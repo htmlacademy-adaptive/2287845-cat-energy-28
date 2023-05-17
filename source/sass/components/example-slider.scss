@@ -1,79 +1,8 @@
-.example-slider {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  row-gap: 34px;
-
-  @media (min-width: $tablet-width) {
-    justify-content: flex-start;
-    gap: 42px;
-    align-items: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 370px;
-  }
-}
-
-.example-slider__container {
-  border: 1px solid $grey-3;
-  border-radius: 3px;
-  min-width: 124px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  margin: 0;
-}
-
-.example-slider__title {
-  @include font(24px, 24px, $black, 400);
-  font-family: $fontSecondary;
+.example-cost {
+  margin: 104px 0 0 0;
   text-align: center;
-  margin: 0;
-  padding-top: 15px;
-  max-width: 82px;
 
-  @media (min-width: $tablet-width) {
-    max-width: 102px;
-    font-size: 30px;
-    line-height: 37px;
-  }
-}
-
-.example-slider__subtitle {
-  @include font(12px, 12px, $grey-6, 400);
-  text-align: center;
-  margin: 0 0 -20px 0;
-  max-width: 87px;
-  background-color: $grey-8;
-  padding: 5px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 14px;
-    line-height: 14px;
-  }
-}
-
-.example-slider__cost {
-  @include font(14px, 20px, $black, 400);
-  font-family: $fontSecondary;
-  text-align: center;
-  margin: 0;
-  text-transform: uppercase;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-    max-width: 174px;
-    text-align: right;
-    margin-left: auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    max-width: unset;
-    text-align: inherit;
-  }
+  /* @media (min-width: $tablet-width) {
+    background-color: $grey-8;
+  }*/
 }

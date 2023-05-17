@@ -6,8 +6,6 @@
 
 
 .catalog-preview__list {
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 
   @media (min-width: $desktop-width) {
@@ -29,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 77px 37px 55px 52px;
+    padding: 47px 61px 55px 52px;
     max-width: 570px;
     margin-bottom: 0;
   }
@@ -46,8 +44,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 0 39px 0;
+    column-gap: 62px;
   }
 }
 
@@ -69,14 +68,15 @@
     width: 200px;
     height: 200px;
     transform: translateY(-50%);
+  }
 
-    @media (min-width: $desktop-width) {
-      position: unset;
-      width: 100px;
-      height: 100px;
-      left: 52px;
-      top: 87px;
-    }
+  @media (min-width: $desktop-width) {
+    position: relative;
+    transform: unset;
+    width: 100px;
+    height: 100px;
+    top: unset;
+    right: unset;
   }
 }
 
