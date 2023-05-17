@@ -15,16 +15,16 @@
     &--active {
       border-bottom: 2px solid $green;
     }
-
-    &--white {
-      color: $white;
-      border-color: $white;
-    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+
+    &--white {
+      color: $white;
+      border-color: $white;
+    }
   }
 }
 
