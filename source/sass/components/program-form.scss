@@ -1,4 +1,92 @@
+.program-form {
+  margin: 0 0 82px 0;
+}
+
+.program-form__title {
+  @include font(36px, 36px, $black, 400);
+  font-family: $fontSecondary;
+  margin: 0 0 37px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 65px 0 54px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.program-form__subtitle {
+  @include font(14px, 18px, $black, 400);
+  font-family: $fontSecondary;
+  text-transform: uppercase;
+  margin: 0;
+  grid-column: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-form__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    column-gap: 80px;
+    row-gap: 68px;
+  }
+}
+
 .program-form__text {
   @include font(14px, 16px, $black, 400);
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.program-form__button {
+  @include font(16px, 20px, $white, 400);
+  font-family: $fontSecondary;
+  display: block;
+  padding: 7px 44px;
+  margin: 0 0 28px 0;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 0;
+    padding: 26px 33px;
+    margin: 0;
+    max-width: 282px;
+    flex: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 568px;
+    padding: 26px 20px;
+  }
+}
+
+.program-form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding: 0 110px 0 40px;
+    gap: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 0;
+    gap: 58px;
+  }
 }

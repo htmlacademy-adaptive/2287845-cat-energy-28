@@ -2,11 +2,52 @@
   @include font(20px, 20px, $black, 500);
   font-family: $fontSecondary;
   text-decoration: none;
+  text-transform: uppercase;
+  padding: 22px 20px 24px 20px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 15px 0;
+
+    &--active {
+      border-bottom: 2px solid $green;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--white {
+      color: $white;
+      border-color: $white;
+    }
+  }
 }
 
-
 .nav__list {
+  text-align: center;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    column-gap: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 34px;
+  }
+}
+
+.nav__item {
+  border-top: 1px solid $grey-9;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }

@@ -1,13 +1,7 @@
-.program {
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px;
-}
 
-.program__title {
-  @include font(36px, 36px, $black, 400);
-  font-family: $fontSecondary;
-  margin: 0 0 37px 0;
-  text-align: center;
-  align-self: flex-start;
+.program-form__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }

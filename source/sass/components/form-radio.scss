@@ -1,5 +1,131 @@
+.form-radio {
+  border: none;
+  padding: 0 0 26px 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    padding: 0;
+  }
+}
+
+.form-radio__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 0 0 19px 0;
+  margin: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $platinum;
+    padding: 25px 30px 29px 28px;
+    margin: 20px 0 0 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: 100vw;
+    background-color: $grey-2;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 25px;
+  }
+}
+
+.form-radio__radio {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  column-gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+  }
+}
+
+.form-radio__input {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  margin: 0;
+  appearance: none;
+}
+
+.form-radio__control {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid $grey-3;
+  border-radius: 50%;
+  flex-shrink: 0;
+  align-self: flex-start;
+
+
+  &::before {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    content: "";
+    background-color: $green;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .form-radio__description {
   @include font(16px, 18px, $black-2, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+
+.form-radio__input:checked ~ .form-radio__control::before {
+  display: block;
+}
+
+
+.form-radio__radio:hover .form-radio__control {
+  border-color: #bababa;
 }

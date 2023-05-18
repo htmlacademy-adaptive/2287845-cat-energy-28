@@ -1,6 +1,15 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 0;
+  border-top: 1px solid $grey-5;
+
+  @media (min-width: $tablet-width) {
+    border: 0;
+    padding: 0;
+    gap: 28px;
+  }
 }
 
 .copyright__text {

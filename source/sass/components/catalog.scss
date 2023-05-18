@@ -1,29 +1,226 @@
+.catalog__container {
+  &.middle-container {
+    margin: 0 auto 25px auto;
+  }
+}
+
 .catalog__title {
+  overflow: hidden;
+
   @include font(36px, 36px, $black, 400);
   font-family: $fontSecondary;
+  padding-bottom: 41px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0;
+    border: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    overflow: visible;
+  }
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  list-style-type: none;
+  margin: 41px 0 0 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: space-between;
+    margin: 82px 0 68px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+    row-gap: 144px;
+    margin: 84px 0 0 0;
+  }
+}
+
+.catalog__item {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  row-gap: 13px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 34px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 324px;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 39px 0;
+    background-color: $grey;
+
+    &:last-child {
+      background-color: $white;
+      border: 2px solid $grey;
+    }
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: 200vw;
+    background-color: $grey-2;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+  }
+}
+
+.catalog__item-img {
+  flex-shrink: 0;
+}
+
+.catalog__item-list {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+}
+
+.catalog__item-container {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    min-width: 252px;
+    width: 100%;
+    border-bottom: 1px solid $platinum;
+    padding: 0 0 9px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 166px;
+  }
 }
 
 .catalog__item-heading {
   @include font(16px, 20px, $grey-7, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
+  margin: 0 0 18px 0;
+  max-width: 76px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0;
+    max-width: 159px;
+    text-align: center;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 145px;
+    margin: 0 0 22px 0;
+    line-height: 21px;
+  }
 }
 
 .catalog__item-terms {
   @include font(12px, 16px, $grey-6, 400);
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding: 0;
+    width: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+  }
 }
 
 .catalog__item-description {
   @include font(12px, 16px, $grey-6, 400);
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 120px;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 80px;
+  }
 }
 
-.catalog__item-link {
+.catalog__button {
   @include font(16px, 20px, $white, 400);
   font-family: $fontSecondary;
   text-align: center;
   text-decoration: none;
-  padding: 10px 109px;
+  padding: 10px 110px;
+  margin: 0;
   background-color: $green;
   text-transform: uppercase;
+  width: fit-content;
+  max-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 248px;
+    padding: 10px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 168px;
+    padding: 10px 53px;
+  }
+}
+
+.catalog__item-descriptions {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-width: 252px;
+    row-gap: 22px;
+    align-items: center;
+    flex: 1;
+  }
+}
+
+.catalog__item-link {
+  @media (min-width: $tablet-width) {
+    max-width: 1220px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 244px;
+    padding: 10px 26px;
+    display: inline-block;
+  }
 }

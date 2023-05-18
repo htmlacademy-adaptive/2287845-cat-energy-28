@@ -1,15 +1,49 @@
 .example {
-  padding: 25px 20px 40px 20px;
+  padding: 25px 0 40px 0;
   background-color: $grey-8;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to top, #eaeaea 32%, #ffffff 32%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to top, #eaeaea 77%, #ffffff 77%);
+  }
+}
+
+.example__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
 }
 
 .example__title {
   @include font(36px, 40px, $black, 400);
   font-family: $fontSecondary;
   margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 146px 0;
+  }
 }
 
 .example__subtitle {
   @include font(14px, 18px, $grey-6, 400);
   margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 69px 0;
+  }
 }

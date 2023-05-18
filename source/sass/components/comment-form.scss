@@ -1,9 +1,55 @@
+.comment-form {
+  border: 0;
+  padding: 0;
+  margin: 0 0 23px 0;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+}
+
+.comment-form__text {
+  padding: 0;
+  margin: 0 0 38px 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px 0;
+  }
+}
+
 .comment-form__text-content {
   @include font(24px, 26px, $black, 400);
   font-family: $fontSecondary;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comment-form__description {
   @include font(16px, 18px, $grey-6, 400);
   font-family: $fontSecondary;
+  text-transform: uppercase;
+  border: 1px solid $platinum;
+  padding: 10px 12px 15px 15px;
+  margin: 0;
+  width: 100%;
+  resize: vertical;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 1220px;
+    padding: 10px 15px 15px 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 1440px;
+  }
 }

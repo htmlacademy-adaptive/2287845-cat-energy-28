@@ -1,9 +1,119 @@
+.extra-form {
+  border: 0;
+  padding: 0;
+  margin: 0 0 40px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+  }
+}
+
+.extra-form__legend {
+  padding: 0;
+  margin: 0 0 57px 0;
+}
+
+.extra-form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 54px 0;
+    column-gap: 123px;
+    row-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .extra-form__title {
   @include font(24px, 26px, $black, 400);
   font-family: $fontSecondary;
+  display: inline-block;
+  margin: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+  }
 }
 
 .extra-form__text {
   @include font(16px, 18px, $black, 400);
   font-family: $fontSecondary;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.extra-form__label {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  column-gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+    width: 190px;
+  }
+}
+
+.extra-form__checkbox {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  margin: 0;
+  appearance: none;
+}
+
+.extra-form__mark {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $grey-3;
+  flex-shrink: 0;
+  align-self: flex-start;
+
+  &::before {
+    display: none;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 26px;
+    height: 26px;
+    content: "";
+    background-image: url("../../img/tick.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.extra-form__checkbox:checked ~ .extra-form__mark::before {
+  display: block;
+}
+
+.extra-form__label:hover .extra-form__mark {
+  border-color: $grey-10;
 }

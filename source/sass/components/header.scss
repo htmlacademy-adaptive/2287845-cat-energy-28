@@ -1,24 +1,118 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 10px 20px 17px 20px;
-
   &--form {
     border-bottom: 1px solid $grey-5;
     margin: 0 0 27px 0;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  &--catalog {
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0 0 27px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin: 0 auto;
+    max-width: 1220px;
+    width: 100%;
+    border: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    padding: 53px 0;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      max-width: 100%;
+      justify-content: space-between;
+      padding: 53px 0;
+      margin: 0;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        background: linear-gradient(to left, rgba(104, 183, 56, 0.85) 50%, #ffffff 50%);
+        width: 100%;
+        height: 680px;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &::after {
+        content: "";
+        background-image: url("../../img/index-img/index-bg-cat.jpg");
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 100%;
+        position: absolute;
+        width: 720px;
+        height: 694px;
+        right: 0;
+        top: 0;
+        z-index: -2;
+      }
+    }
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 }
 
 .header__logo {
-  display: flex;
-  align-items: center;
+  max-width: 191px;
 }
 
 .header__logo-image {
   margin: 0 57px 0 0;
 }
 
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 14px;
+  width: 320px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.header__menu-button {
+  /*background-image: url("../../img/button-rectangles.svg");*/
+  background-image: url("../../img/button-cross.svg");
+  background-repeat: no-repeat;
+  background-color: unset;
+  background-size: contain;
+  background-position: 50%;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+  height: 16px;
+  border: 0;
+}
+
 .header__nav {
-  display: none;
+  display: block;
 }

@@ -1,15 +1,94 @@
 
-.hero__wrapper {
+.hero__content {
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+
+.hero__container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding: 0 0 0 90px;
+    width: 100%;
+    margin: 0 auto;
+
+    &.middle-container {
+      padding: 0 30px 0 91px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.hero__wrapper {
+  position: relative;
+  background-image: url("../../img/index-img/index-bg-cat.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(104, 183, 56, 0.85);
+  min-height: 302px;
+  padding: 0 0 150px 0;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: none;
+    min-height: auto;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 90px;
+    margin-bottom: 52px;
+    row-gap: 40px;
+  }
 }
 
 .hero__title {
   @include font(36px, 36px, $white, 400);
   font-family: $fontSecondary;
   text-align: center;
-  padding: 27px 14px 23px 17px;
+  padding: 27px 0 23px 0;
+  position: relative;
+  z-index: 1;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    margin: 0;
+    width: 416px;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .hero__subtitle {
@@ -18,11 +97,47 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+    text-align: left;
+    margin: 0;
+  }
 }
 
 .hero__link {
   text-align: center;
-  padding: 11px 44px;
+  padding: 11px;
   width: 100%;
+  max-width: 280px;
   margin: 0 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/-1;
+    align-self: start;
+    margin: 0;
+    padding: 14px 20px;
+    font-size: 20px;
+    line-height: 20px;
+    max-width: 244px;
+    z-index: 1;
+  }
+}
+
+.hero__image {
+  margin-top: -136px;
+  margin-bottom: 3px;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    grid-area: 1/-1;
+    justify-self: center;
+    margin: 0;
+    transform: translateX(-77px);
+    z-index: 0;
+  }
 }
