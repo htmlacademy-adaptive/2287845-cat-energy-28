@@ -9,7 +9,8 @@
 </head>
 <body>
 <div class="container">
-  <header class="header">
+  <header class="header header--index">
+    <div class="header__container middle-container">
       <div class="header__wrapper">
         <a class="header__logo" href="#">
           <img src="img/logo-mobile.svg" alt="Кэт Энерджи" width="191" height="38">
@@ -18,25 +19,26 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
       </div>
-    <nav class="header__nav nav">
-      <div class="nav__wrapper">
-        <ul class="nav__list">
-          <li class="nav__item nav__item--active">
-            <a class="nav__link" href="#">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог Продукции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Подбор Программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="header__nav nav">
+        <div class="nav__wrapper">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active nav__link--white" href="#">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--white" href="catalog.html">Каталог Продукции</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--white" href="form.html">Подбор Программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <section class="main__section hero">
-
+      <div class="hero__content middle-container">
         <div class="hero__wrapper">
           <h1 class="hero__title">Функциональное питание для котов</h1>
           <h2 class="hero__subtitle">Занялся собой? Займись котом!</h2>
@@ -45,7 +47,7 @@
           <img class="hero__image" src="img/index-img/index-can-mobile.png" alt="Кэт энерджи про" width="280" height="270">
           <a class="hero__link button" href="#">подобрать программу</a>
         </div>
-
+      </div>
     </section>
     <section class="main__section catalog-preview">
       <ul class="catalog-preview__list middle-container">
@@ -128,26 +130,26 @@
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
             по 16 часов в день.</p>
         </div>
-        <div class="example__slider example-slider">
-          <div class="example-slider__container">
-            <h3 class="example-slider__title">5 КГ</h3>
-            <p class="example-slider__subtitle">снижение веса</p>
+        <div class="example__info example-info">
+          <div class="example-info__container">
+            <h3 class="example-info__title">5 КГ</h3>
+            <p class="example-info__subtitle">снижение веса</p>
           </div>
-          <div class="example-slider__container">
-            <h3 class="example-slider__title">60 ДНЕЙ</h3>
-            <p class="example-slider__subtitle">затрачено времени</p>
+          <div class="example-info__container">
+            <h3 class="example-info__title">60 ДНЕЙ</h3>
+            <p class="example-info__subtitle">затрачено времени</p>
           </div>
-          <h4 class="example-slider__cost">Затраты на питание: 15 000 РУБ.</h4>
+          <h4 class="example-info__cost">Затраты на питание: 15 000 РУБ.</h4>
         </div>
-        <div class="example__cost example-cost">
-          <img class="example-cost__image" src="img/index-img/cat-slide.png" alt="Слайдер котика" width="280" height="256">
+        <div class="example__slider example-slider">
+          <img class="example-slider__image" src="img/index-img/cat-slide.png" alt="Слайдер котика" width="280" height="256">
         </div>
       </div>
     </section>
     <section class="main__section contacts">
       <div class="contacts__container middle-container">
         <div class="contacts__text-container">
-          <h2 class="contacts__title">Приглашаем<br> к сотрудничеству дилеров!</h2>
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
           <div class="contacts__texts">
             <span class="contacts__text">ул. Большая Конюшенная, д. 19/8</span>
             <span class="contacts__text">Санкт-Петербург</span>
@@ -158,33 +160,35 @@
     </section>
   </main>
   <footer class="footer">
-    <a class="footer__logo-link" href="#">
-      <img class="footer__logo" src="img/logo-text.svg" alt="Кэт энерджи" width="101" height="18">
-    </a>
-    <div class="footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__image" src="img/vkontakte.svg" alt="Иконка Вконтакте" width="28" height="22">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__image" src="img/youtube.svg" alt="Иконка Ютуб" width="28" height="22">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <img class="social__image" src="img/telegram.svg" alt="Иконка Телеграм" width="28" height="22">
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <p class="copyright__text">HTML Academy</p>
-      <a class="copyright__link" href="#">
-        <img class="copyright__image" src="img/logo-htmlacademy.svg" alt="Логотип Академии" width="27" height="34">
+    <div class="footer__container middle-container">
+      <a class="footer__logo-link" href="#">
+        <img class="footer__logo" src="img/logo-text.svg" alt="Кэт энерджи" width="101" height="18">
       </a>
+      <div class="footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__image" src="img/vkontakte.svg" alt="Иконка Вконтакте" width="28" height="22">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__image" src="img/youtube.svg" alt="Иконка Ютуб" width="28" height="22">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img class="social__image" src="img/telegram.svg" alt="Иконка Телеграм" width="28" height="22">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">HTML Academy</p>
+        <a class="copyright__link" href="#">
+          <img class="copyright__image" src="img/logo-htmlacademy.svg" alt="Логотип Академии" width="27" height="34">
+        </a>
+      </div>
     </div>
   </footer>
 </div>
