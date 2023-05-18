@@ -13,8 +13,8 @@
 
 .example__container {
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     position: relative;
   }
 }

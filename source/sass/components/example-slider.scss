@@ -1,8 +1,9 @@
-.example-cost {
-  margin: 104px 0 0 0;
-  text-align: center;
 
-  /* @media (min-width: $tablet-width) {
-    background-color: $grey-8;
-  }*/
+.example-slider {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / -2;
+    grid-row: 2 / -2;
+    text-align: center;
+    align-self: center;
+  }
 }
