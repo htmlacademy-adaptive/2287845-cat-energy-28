@@ -47,10 +47,19 @@
   width: 100%;
   margin: 0;
 
+  &:focus {
+    border: 2px solid $grey-6;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      border: 1px solid $grey-3;
+    }
   }
 }
 

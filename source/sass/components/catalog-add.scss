@@ -58,9 +58,17 @@
   background-color: $grey;
   padding: 10px 95px;
 
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 169px;
     padding: 10px 39px;
+
+    &:hover {
+      background-color: $grey-2;
+    }
   }
 }
 

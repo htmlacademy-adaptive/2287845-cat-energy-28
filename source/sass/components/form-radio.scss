@@ -56,6 +56,19 @@
   align-items: center;
   column-gap: 16px;
 
+  &:active {
+    opacity: 0.3;
+    color: rgba(34, 34, 34, 0.3);
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      .form-radio__control {
+        border: 1px solid $grey-10;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
     column-gap: 20px;
   }
@@ -123,9 +136,4 @@
 
 .form-radio__input:checked ~ .form-radio__control::before {
   display: block;
-}
-
-
-.form-radio__radio:hover .form-radio__control {
-  border-color: #bababa;
 }

@@ -65,10 +65,10 @@
       width: 100vw;
       background-color: $grey-9;
       transform: translateX(-50%);
-    }
 
-    &:last-child {
-      position: static;
+      &:last-child {
+        position: static;
+      }
     }
   }
 
