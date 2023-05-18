@@ -6,6 +6,10 @@
   padding: 22px 20px 24px 20px;
   display: block;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-weight: 400;
     font-size: 18px;
@@ -24,6 +28,10 @@
     &--white {
       color: $white;
       border-color: $white;
+    }
+
+    &:hover {
+      opacity: 0.6;
     }
   }
 }
@@ -45,9 +53,28 @@
 }
 
 .nav__item {
-  border-top: 1px solid $grey-9;
+  @media (min-width: $mobile-width) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 1px;
+      width: 100vw;
+      background-color: $grey-9;
+      transform: translateX(-50%);
+    }
+
+    &:last-child {
+      position: static;
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    border: none;
+    &::after {
+      display: none;
+    }
   }
 }

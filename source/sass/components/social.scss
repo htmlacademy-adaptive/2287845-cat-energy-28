@@ -12,3 +12,16 @@
     padding: 0;
   }
 }
+
+.social__link svg {
+  &:active {
+    fill: $green;
+    fill-opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      fill: $green;
+    }
+  }
+}

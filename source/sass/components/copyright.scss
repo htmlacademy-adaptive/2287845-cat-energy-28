@@ -1,9 +1,7 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px 0 0;
   border-top: 1px solid $grey-5;
+
 
   @media (min-width: $tablet-width) {
     border: 0;
@@ -12,7 +10,27 @@
   }
 }
 
-.copyright__text {
+.copyright__link {
   @include font(16px, 19px, $grey-6, 400);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
   margin: 0;
+  width: 280px;
+  fill: $grey-4;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      fill: $green;
+    }
+  }
 }

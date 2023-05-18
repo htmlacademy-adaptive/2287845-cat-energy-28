@@ -162,6 +162,7 @@
   border-top: 1px solid $grey-5;
   padding-top: 15px;
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     border: 0;
@@ -170,5 +171,39 @@
     gap: 25px;
     padding: 0;
     width: fit-content;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      .catalog-preview__icon-line {
+        width: 26px;
+      }
+    }
+  }
+}
+
+.catalog-preview__icon {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  vertical-align: top;
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+.catalog-preview__icon-line {
+  width: 18px;
+  transition: all 0.3s ease;
+
+  &:active {
+    opacity: 0.3;
   }
 }
