@@ -60,6 +60,10 @@
   margin: 0 0 28px 0;
   width: 100%;
 
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 0;

@@ -68,9 +68,23 @@
   align-items: center;
   column-gap: 16px;
 
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    border-color: $grey-6;
+  }
+
   @media (min-width: $tablet-width) {
     column-gap: 20px;
     width: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      border-color: $grey-10;
+    }
   }
 }
 
@@ -95,6 +109,7 @@
   border: 1px solid $grey-3;
   flex-shrink: 0;
   align-self: flex-start;
+
 
   &::before {
     display: none;

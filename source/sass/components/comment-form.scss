@@ -51,5 +51,9 @@
 
   @media (min-width: $tablet-width) {
     max-width: 1440px;
+
+    &:hover {
+      border-color: $grey-3;
+    }
   }
 }

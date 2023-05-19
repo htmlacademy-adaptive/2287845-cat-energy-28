@@ -47,8 +47,9 @@
   width: 100%;
   margin: 0;
 
-  &:focus {
-    border: 2px solid $grey-6;
+  &:focus + svg {
+    border-color: 2px solid $grey-6;
+    stroke: $green;
   }
 
   @media (min-width: $tablet-width) {
@@ -89,10 +90,6 @@
   align-items: center;
   gap: 10px;
   position: relative;
-
-  &:hover svg {
-    stroke: $green;
-  }
 }
 
 .contacts-form__img {
