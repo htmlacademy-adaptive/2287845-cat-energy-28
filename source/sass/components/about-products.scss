@@ -28,16 +28,85 @@
 
   &:last-child {
     margin: 0 0 53px 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    max-width: 250px;
-    gap: 37px;
+    width: 245px;
+    height: 280px;
+    gap: 31px;
+    position: relative;
+
+    &--leaf {
+      &::before {
+        content: "1";
+        position: absolute;
+        z-index: -1;
+        bottom: 90px;
+        left: 119px;
+        width: 70px;
+        height: 228px;
+        font-family: "Oswald", "Arial", sans-serif;
+        font-size: 281.07px;
+        line-height: 281.07px;
+        color: $grey;
+      }
+    }
+
+    &--powder {
+      &::before {
+        content: "2";
+        position: absolute;
+        z-index: -1;
+        bottom: 90px;
+        left: 119px;
+        width: 70px;
+        height: 228px;
+        font-family: "Oswald", "Arial", sans-serif;
+        font-size: 281px;
+        line-height: 281px;
+        color: $grey;
+      }
+    }
+
+    &--cutlery {
+      &::before {
+        content: "3";
+        position: absolute;
+        z-index: -1;
+        bottom: 90px;
+        left: 119px;
+        width: 70px;
+        height: 228px;
+        font-family: "Oswald", "Arial", sans-serif;
+        font-size: 281.07px;
+        line-height: 281.07px;
+        color: $grey;
+      }
+    }
+
+    &--clock {
+      &::before {
+        content: "4";
+        position: absolute;
+        z-index: -1;
+        bottom: 90px;
+        left: 119px;
+        width: 70px;
+        height: 228px;
+        font-family: "Oswald", "Arial", sans-serif;
+        font-size: 281.07px;
+        line-height: 281.07px;
+        color: $grey;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
-    gap: 31px;
     padding: 0;
   }
 }
