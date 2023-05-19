@@ -13,10 +13,31 @@
   font-family: $fontSecondary;
   margin: 0 0 35px 0;
   padding: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      top: 21px;
+      left: 109%;
+      width: 100vw;
+      height: 2px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      top: 21px;
+      right: 105%;
+      width: 100vw;
+      height: 2px;
+    }
   }
 
   @media (min-width: $desktop-width) {

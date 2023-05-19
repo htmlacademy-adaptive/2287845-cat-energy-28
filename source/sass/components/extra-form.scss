@@ -15,6 +15,29 @@
 .extra-form__legend {
   padding: 0;
   margin: 0 0 57px 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      top: 21px;
+      left: 125%;
+      width: 100vw;
+      height: 2px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      top: 21px;
+      right: 118%;
+      width: 100vw;
+      height: 2px;
+    }
+  }
 }
 
 .extra-form__list {

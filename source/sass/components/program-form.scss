@@ -28,14 +28,26 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
 .program-form__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 68px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
+    padding: 0;
     column-gap: 80px;
     row-gap: 68px;
   }
