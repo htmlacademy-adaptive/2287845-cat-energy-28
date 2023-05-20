@@ -1,3 +1,11 @@
+.nav {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
 .nav__link {
   @include font(20px, 20px, $black, 500);
   font-family: $fontSecondary;

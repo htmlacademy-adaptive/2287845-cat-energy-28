@@ -69,6 +69,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -86,8 +87,8 @@
 .header__wrapper {
   display: flex;
   align-items: center;
-  padding: 10px 40px 10px 0;
-  margin: 0 auto;
+  padding: 10px 0;
+  margin: 0;
   justify-content: space-between;
   position: relative;
 
@@ -115,7 +116,14 @@
 }
 
 .header__menu-button {
-  /*background-image: url("../../img/button-rectangles.svg");*/
+  width: 60px;
+  height: 46px;
+  position: relative;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+
+  /*!*background-image: url("../../img/button-rectangles.svg");*!
   background-image: url("../../img/button-cross.svg");
   background-repeat: no-repeat;
   background-color: unset;
@@ -125,7 +133,42 @@
   padding: 0;
   width: 24px;
   height: 16px;
-  border: 0;
+  border: 0;*/
+}
+
+.header__button {
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  background-color: $black;
+  top: 50%;
+  left: 60%;
+  transition: 0.5s;
+  overflow: hidden;
+
+  &:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+
+  &:nth-of-type(3) {
+    top: calc(50% + 5px);
+  }
+}
+
+.header__menu-button--active .header__button {
+  &:first-of-type {
+    transform: translateX(200%);
+  }
+
+  &:nth-of-type(2) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  &:nth-of-type(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
 }
 
 .header__nav {
