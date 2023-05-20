@@ -1,9 +1,8 @@
 .nav {
-  display: none;
-
   &--active {
-    display: block;
+    display: none;
   }
+  display: block;
 }
 
 .nav__link {

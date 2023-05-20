@@ -123,6 +123,10 @@
   right: 0;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
   /*!*background-image: url("../../img/button-rectangles.svg");*!
   background-image: url("../../img/button-cross.svg");
   background-repeat: no-repeat;
@@ -146,16 +150,6 @@
   transition: 0.5s;
   overflow: hidden;
 
-  &:nth-of-type(2) {
-    top: calc(50% - 5px);
-  }
-
-  &:nth-of-type(3) {
-    top: calc(50% + 5px);
-  }
-}
-
-.header__menu-button--active .header__button {
   &:first-of-type {
     transform: translateX(200%);
   }
@@ -168,6 +162,22 @@
   &:nth-of-type(3) {
     top: 50%;
     transform: rotate(-45deg);
+  }
+}
+
+.header__menu-button--active .header__button {
+  &:first-of-type {
+    transform: translateX(0);
+  }
+
+  &:nth-of-type(2) {
+    top: calc(50% - 5px);
+    transform: rotate(0);
+  }
+
+  &:nth-of-type(3) {
+    top: calc(50% + 5px);
+    transform: rotate(0);
   }
 }
 
