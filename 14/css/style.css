@@ -2195,6 +2195,11 @@ a {
 .nav--active {
   display: none;
 }
+@media (min-width: 768px) {
+  .nav--active {
+    display: block;
+  }
+}
 
 .nav__link {
   font-family: "Lato", "Arial", sans-serif;
