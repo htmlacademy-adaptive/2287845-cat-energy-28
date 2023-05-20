@@ -1,12 +1,12 @@
 .nav {
   &--active {
-    display: none;
+    display: block;
 
     @media (min-width: $tablet-width) {
       display: block;
     }
   }
-  display: block;
+  display: none;
 }
 
 .nav__link {

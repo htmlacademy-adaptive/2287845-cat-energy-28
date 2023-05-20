@@ -151,22 +151,6 @@
   overflow: hidden;
 
   &:first-of-type {
-    transform: translateX(200%);
-  }
-
-  &:nth-of-type(2) {
-    top: 50%;
-    transform: rotate(45deg);
-  }
-
-  &:nth-of-type(3) {
-    top: 50%;
-    transform: rotate(-45deg);
-  }
-}
-
-.header__menu-button--active .header__button {
-  &:first-of-type {
     transform: translateX(0);
   }
 
@@ -178,6 +162,22 @@
   &:nth-of-type(3) {
     top: calc(50% + 5px);
     transform: rotate(0);
+  }
+}
+
+.header__menu-button--active .header__button {
+  &:first-of-type {
+    transform: translateX(-260%);
+  }
+
+  &:nth-of-type(2) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  &:nth-of-type(3) {
+    top: 50%;
+    transform: rotate(-45deg);
   }
 }
 
