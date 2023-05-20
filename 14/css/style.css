@@ -175,7 +175,6 @@ a {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  overflow: hidden;
 }
 @media (min-width: 768px) {
   .header__container {
@@ -228,6 +227,7 @@ a {
   top: 0;
   right: 0;
   cursor: pointer;
+  overflow: hidden;
   /*!*background-image: url("../../img/button-rectangles.svg");*!
   background-image: url("../../img/button-cross.svg");
   background-repeat: no-repeat;
@@ -240,6 +240,11 @@ a {
   height: 16px;
   border: 0;*/
 }
+@media (min-width: 768px) {
+  .header__menu-button {
+    display: none;
+  }
+}
 
 .header__button {
   width: 24px;
@@ -251,23 +256,28 @@ a {
   transition: 0.5s;
   overflow: hidden;
 }
-.header__button:nth-of-type(2) {
-  top: calc(50% - 5px);
-}
-.header__button:nth-of-type(3) {
-  top: calc(50% + 5px);
-}
-
-.header__menu-button--active .header__button:first-of-type {
+.header__button:first-of-type {
   transform: translateX(200%);
 }
-.header__menu-button--active .header__button:nth-of-type(2) {
+.header__button:nth-of-type(2) {
   top: 50%;
   transform: rotate(45deg);
 }
-.header__menu-button--active .header__button:nth-of-type(3) {
+.header__button:nth-of-type(3) {
   top: 50%;
   transform: rotate(-45deg);
+}
+
+.header__menu-button--active .header__button:first-of-type {
+  transform: translateX(0);
+}
+.header__menu-button--active .header__button:nth-of-type(2) {
+  top: calc(50% - 5px);
+  transform: rotate(0);
+}
+.header__menu-button--active .header__button:nth-of-type(3) {
+  top: calc(50% + 5px);
+  transform: rotate(0);
 }
 
 .header__nav {
@@ -2180,10 +2190,10 @@ a {
 }
 
 .nav {
-  display: none;
+  display: block;
 }
 .nav--active {
-  display: block;
+  display: none;
 }
 
 .nav__link {
