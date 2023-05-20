@@ -1,6 +1,10 @@
 .nav {
   &--active {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
   display: block;
 }
