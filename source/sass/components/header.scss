@@ -69,7 +69,6 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -122,6 +121,7 @@
   top: 0;
   right: 0;
   cursor: pointer;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     display: none;
