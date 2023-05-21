@@ -86,10 +86,10 @@
 
 .extra-form__label {
   position: relative;
-  display: flex;
-  cursor: pointer;
+  display: inline-flex;
   align-items: center;
-  column-gap: 16px;
+  column-gap: 15px;
+  vertical-align: top;
 
   &:active {
     opacity: 0.3;
@@ -112,39 +112,50 @@
 }
 
 .extra-form__checkbox {
-  display: block;
   position: absolute;
-  left: 0;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  transform: translateY(-50%);
-  margin: 0;
   appearance: none;
+  width: 32px;
+  height: 32px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+
+  &:checked + span::before {
+    background-image: url("../../img/tick.svg");
+    background-position: center;
+  }
+
+  &:disabled + span {
+    opacity: 0.3;
+    cursor: default;
+  }
 }
 
 .extra-form__mark {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 30px;
-  height: 30px;
-  border: 1px solid $grey-3;
-  flex-shrink: 0;
-  align-self: flex-start;
-
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: fit-content;
+  cursor: pointer;
 
   &::before {
-    display: none;
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 26px;
-    height: 26px;
     content: "";
-    background-image: url("../../img/tick.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    border: 1px solid rgba(205, 205, 205, 1);
+    width: 30px;
+    height: 30px;
+    align-self: flex-start;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    &::before {
+      border-color: rgba(186, 186, 186, 1);
+    }
   }
 }
 

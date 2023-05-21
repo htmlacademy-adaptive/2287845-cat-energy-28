@@ -1,4 +1,10 @@
 .nav {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   &--active {
     display: block;
 
@@ -6,7 +12,22 @@
       display: block;
     }
   }
-  display: none;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 1px;
+    width: 100vw;
+    background-color: $grey-9;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .nav__link {

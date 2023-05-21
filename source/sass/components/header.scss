@@ -89,18 +89,6 @@
   padding: 10px 0;
   margin: 0;
   justify-content: space-between;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    height: 1px;
-    width: 100vw;
-    background-color: $grey-9;
-    transform: translateX(-50%);
-  }
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -126,18 +114,6 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
-
-  /*!*background-image: url("../../img/button-rectangles.svg");*!
-  background-image: url("../../img/button-cross.svg");
-  background-repeat: no-repeat;
-  background-color: unset;
-  background-size: contain;
-  background-position: 50%;
-  margin: 0;
-  padding: 0;
-  width: 24px;
-  height: 16px;
-  border: 0;*/
 }
 
 .header__button {
@@ -179,8 +155,4 @@
     top: 50%;
     transform: rotate(-45deg);
   }
-}
-
-.header__nav {
-  display: block;
 }
