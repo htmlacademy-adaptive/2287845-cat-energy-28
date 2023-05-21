@@ -3,11 +3,15 @@
     display: grid;
     position: relative;
     z-index: 1;
-    background: $grey;
+    background-color: $grey;
   }
 }
 
 .contacts__container {
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 4;

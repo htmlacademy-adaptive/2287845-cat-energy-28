@@ -60,9 +60,10 @@
     align-items: flex-start;
     background: none;
     min-height: auto;
-    margin: 0;
+    margin: 0 0 49px 0;
     width: 100%;
-    padding: 0;
+    padding: 0 0 0 90px;
+    row-gap: 41px;
 
     &::before {
       display: none;
