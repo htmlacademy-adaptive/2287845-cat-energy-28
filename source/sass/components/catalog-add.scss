@@ -4,9 +4,6 @@
   row-gap: 13px;
   position: relative;
   padding: 0 0 25px 0;
-  background-color: $white;
-  border: 2px solid $grey;
-  order: 1;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 39px 0;
@@ -81,7 +78,6 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
-
 }
 
 .catalog-add__image {
