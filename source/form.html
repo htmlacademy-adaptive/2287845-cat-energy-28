@@ -5,19 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
 <header class="header header--form">
   <div class="header__container middle-container">
     <div class="header__wrapper">
-      <a class="header__logo" href="#">
-        <img src="img/logo-mobile.svg" alt="Кэт Энерджи" width="191" height="38">
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="202" height="60">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52px">
+          <img src="img/logo-mobile.svg" alt="Кэт Энерджи" width="191" height="38">
+        </picture>
       </a>
-      <div class="header__menu-button header__menu-button--active">
+      <button class="header__menu-button header__menu-button--active" type="button">
         <span class="header__button"></span>
         <span class="header__button"></span>
         <span class="header__button"></span>
-      </div>
+      </button>
     </div>
     <nav class="header__nav nav nav--active">
       <div class="nav__wrapper">

@@ -1,10 +1,16 @@
-let menuBtn = document.querySelector('.header__menu-button');
-let nav = document.querySelector('.nav')
+const burgerMenu = () => {
+  const menuButton = document.querySelector('.header__menu-button');
+  const nav = document.querySelector('.nav');
 
-menuBtn.classList.remove('header__menu-button--active');
-nav.classList.remove('nav--active');
+  function handleClickBurgerButton() {
+    menuButton .classList.toggle('header__menu-button--active');
+    nav.classList.toggle('nav--active');
+  }
 
-menuBtn.addEventListener('click', function (){
-  menuBtn.classList.toggle('header__menu-button--active');
-  nav.classList.toggle('nav--active');
-})
+  menuButton.classList.remove('header__menu-button--active');
+  nav.classList.remove('nav--active');
+
+  menuButton.addEventListener('click', handleClickBurgerButton);
+}
+
+document.addEventListener("DOMContentLoaded", burgerMenu);

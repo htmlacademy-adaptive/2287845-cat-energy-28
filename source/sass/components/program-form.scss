@@ -1,5 +1,6 @@
 .program-form {
   margin: 0 0 82px 0;
+  overflow: hidden;
 }
 
 .program-form__title {
@@ -41,7 +42,6 @@
     display: flex;
     flex-direction: column;
     padding: 0 68px;
-    overflow: hidden;
   }
 
   @media (min-width: $desktop-width) {

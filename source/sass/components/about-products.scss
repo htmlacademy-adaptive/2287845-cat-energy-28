@@ -52,68 +52,18 @@
     margin: 0;
     counter-increment: num;
 
-    &--leaf {
-      &::before {
-        content: "1";
-        position: absolute;
-        z-index: -1;
-        bottom: 90px;
-        left: 119px;
-        width: 70px;
-        height: 228px;
-        font-family: "Oswald", "Arial", sans-serif;
-        font-size: 281.07px;
-        line-height: 281.07px;
-        color: $grey;
-      }
-    }
-
-    &--powder {
-      &::before {
-        content: "2";
-        position: absolute;
-        z-index: -1;
-        bottom: 90px;
-        left: 119px;
-        width: 70px;
-        height: 228px;
-        font-family: "Oswald", "Arial", sans-serif;
-        font-size: 281px;
-        line-height: 281px;
-        color: $grey;
-      }
-    }
-
-    &--cutlery {
-      &::before {
-        content: "3";
-        position: absolute;
-        z-index: -1;
-        bottom: 90px;
-        left: 119px;
-        width: 70px;
-        height: 228px;
-        font-family: "Oswald", "Arial", sans-serif;
-        font-size: 281.07px;
-        line-height: 281.07px;
-        color: $grey;
-      }
-    }
-
-    &--clock {
-      &::before {
-        content: "4";
-        position: absolute;
-        z-index: -1;
-        bottom: 90px;
-        left: 119px;
-        width: 70px;
-        height: 228px;
-        font-family: "Oswald", "Arial", sans-serif;
-        font-size: 281.07px;
-        line-height: 281.07px;
-        color: $grey;
-      }
+    &::before {
+      content: counter(num);
+      position: absolute;
+      z-index: -1;
+      bottom: 90px;
+      left: 119px;
+      width: 70px;
+      height: 228px;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281.07px;
+      line-height: 281.07px;
+      color: $grey;
     }
   }
 
