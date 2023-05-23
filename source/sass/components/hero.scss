@@ -44,6 +44,11 @@
   padding: 0 0 150px 0;
   z-index: -2;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/index-img/index-bg-cat@2x.jpg");
+    background-size: 320px 302px;
+  }
+
   &::before {
     content: "";
     display: block;
