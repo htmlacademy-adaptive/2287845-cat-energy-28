@@ -87,7 +87,7 @@
         background-size: 100%;
         position: absolute;
         width: 1040px;
-        height: 695px;
+        height: 669px;
         right: calc(50% - 1033px);
         top: 0;
         z-index: 0;
@@ -111,6 +111,18 @@
     margin: 0 auto;
     z-index: 2;
   }
+}
+
+.header__logo {
+  max-width: 191px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
+}
+
+.header__logo-image {
+  margin: 0 57px 0 0;
 }
 
 .header__wrapper {
