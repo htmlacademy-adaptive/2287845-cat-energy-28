@@ -105,7 +105,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 74px;
+    margin: 0 auto;
+    z-index: 2;
     padding: 0;
   }
 
