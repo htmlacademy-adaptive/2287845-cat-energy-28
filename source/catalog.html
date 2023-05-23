@@ -5,19 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body>
 <header class="header header--catalog">
   <div class="header__container middle-container">
     <div class="header__wrapper">
-      <a class="header__logo" href="#">
-        <img src="img/logo-mobile.svg" alt="Кэт Энерджи" width="191" height="38">
+      <a class="header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="202" height="60">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52px">
+          <img src="img/logo-mobile.svg" alt="Кэт Энерджи" width="191" height="38">
+        </picture>
       </a>
-      <div class="header__menu-button header__menu-button--active">
+      <button class="header__menu-button header__menu-button--active" type="button">
         <span class="header__button"></span>
         <span class="header__button"></span>
         <span class="header__button"></span>
-      </div>
+      </button>
     </div>
     <nav class="header__nav nav nav--active">
       <div class="nav__wrapper">
@@ -26,7 +34,7 @@
             <a class="nav__link" href="index.html">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--active" href="catalog.html">Каталог Продукции</a>
+            <a class="nav__link  nav__link--active" href="catalog.html">Каталог Продукции</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="form.html">Подбор Программы</a>
@@ -36,13 +44,19 @@
     </nav>
   </div>
 </header>
+
 <main class="main catalog">
   <section class="catalog__section">
-    <h1 class="catalog__title middle-container">Каталог продукции</h1>
+    <h1 class="catalog__title">Каталог продукции</h1>
     <div class="catalog__container middle-container">
       <ul class="catalog__list">
         <li class="catalog__item">
-          <img class="catalog__item-img" src="img/catalog-img/catalog-1.png" alt="Товар сайта" width="140" height="112">
+          <a class="catalog__item-image__link" href="#">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="img/catalog-img/catalog-1-tablet@1x.png 1x, img/catalog-img/catalog-1-tablet@2x.png 2x" width="161" height="172">
+              <img class="catalog__item-img" src="img/catalog-img/catalog-1.png" srcset="img/catalog-img/catalog-1@2x.png 2x" width="68" height="86" alt="Товар сайта">
+            </picture>
+          </a>
           <div class="catalog__item-descriptions">
             <p class="catalog__item-heading">Cat Energy PRO 500 г</p>
             <dl class="catalog__item-list">
@@ -63,7 +77,13 @@
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
         <li class="catalog__item">
-          <img class="catalog__item-img" src="img/catalog-img/catalog-2.png" alt="Товар сайта" width="140" height="112">
+          <a class="catalog__item-image__link catalog__item-image__link--big-can" href="#">
+            <picture>
+              <source type="image/png" media="(min-width: 1200px)" srcset="img/catalog-img/catalog-2-desktop@1x.png 1x, img/catalog-img/catalog-2-desktop@2x.png 2x" width="172" height="196">
+              <source type="image/png" media="(min-width: 768px)" srcset="img/catalog-img/catalog-2-tablet@1x.png 1x, img/catalog-img/catalog-2-tablet@2x.png 2x" width="168" height="206">
+              <img class="catalog__item-img" src="img/catalog-img/catalog-2.png" srcset="img/catalog-img/catalog-2@2x.png 2x" alt="Товар сайта" width="84px" height="100">
+            </picture>
+          </a>
           <div class="catalog__item-descriptions">
             <p class="catalog__item-heading">Cat Energy PRO 1000 г</p>
             <dl class="catalog__item-list">
@@ -84,7 +104,13 @@
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
         <li class="catalog__item">
-          <img class="catalog__item-img" src="img/catalog-img/catalog-3.png" alt="Товар сайта" width="140" height="112">
+          <a class="catalog__item-image__link" href="#">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="img/catalog-img/catalog-3-tablet@1x.png 1x, img/catalog-img/catalog-3-tablet@2x.png 2x" width="163" height="174">
+              <img class="catalog__item-img" src="img/catalog-img/catalog-3.png" srcset="img/catalog-img/catalog-3@2x.png 2x" alt="Товар сайта" width="68" height="78">
+            </picture>
+          </a>
+
           <div class="catalog__item-descriptions">
             <p class="catalog__item-heading">Cat Energy PRO 500 г</p>
             <dl class="catalog__item-list">
@@ -105,9 +131,16 @@
           <a class=" catalog__button button" href="#">Заказать</a>
         </li>
         <li class="catalog__item">
-          <img class="catalog__item-img" src="img/catalog-img/catalog-4.png" alt="Товар сайта" width="140" height="112">
+          <a class="catalog__item-image__link catalog__item-image__link--big-can" href="#">
+            <picture>
+              <source type="image/png" media="(min-width: 1200px)" srcset="img/catalog-img/catalog-4-desktop@1x.png 1x, img/catalog-img/catalog-4-desktop@2x.png 2x" width="172" height="196">
+              <source type="image/png" media="(min-width: 768px)" srcset="img/catalog-img/catalog-4-tablet@1x.png 1x, img/catalog-img/catalog-4-tablet@2x.png 2x" width="168" height="206">
+              <img class="catalog__item-img" src="img/catalog-img/catalog-4.png" srcset="img/catalog-img/catalog-4@2x.png 2x" alt="Товар сайта" width="84" height="100">
+            </picture>
+          </a>
+
           <div class="catalog__item-descriptions">
-            <p class="catalog__item-heading">Cat Energy<br> PRO 1000 г</p>
+            <p class="catalog__item-heading">Cat Energy PRO 1000 г</p>
             <dl class="catalog__item-list">
               <div class="catalog__item-container">
                 <dt class="catalog__item-terms">Масса</dt>
@@ -126,7 +159,12 @@
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
         <li class="catalog__item">
-          <img class="catalog__item-img" src="img/catalog-img/catalog-5.png" alt="Товар сайта" width="140" height="112">
+          <a class="catalog__item-image__link" href="#">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="img/catalog-img/catalog-5-tablet@1x.png 1x, img/catalog-img/catalog-5-tablet@2x.png 2x" width="163" height="174">
+              <img class="catalog__item-img" src="img/catalog-img/catalog-5.png" srcset="img/catalog-img/catalog-5@2x.png 2x" alt="Товар сайта" width="68" height="78">
+            </picture>
+          </a>
           <div class="catalog__item-descriptions">
             <p class="catalog__item-heading">Cat Energy SLIM 500 г</p>
             <dl class="catalog__item-list">
@@ -147,7 +185,13 @@
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
         <li class="catalog__item">
-          <img class="catalog__item-img" src="img/catalog-img/catalog-6.png" alt="Товар сайта" width="140" height="112">
+          <a class="catalog__item-image__link catalog__item-image__link--big-can" href="#">
+            <picture>
+              <source type="image/png" media="(min-width: 1200px)" srcset="img/catalog-img/catalog-6-desktop@1x.png 1x, img/catalog-img/catalog-6-desktop@2x.png 2x" width="172" height="196">
+              <source type="image/png" media="(min-width: 768px)" srcset="img/catalog-img/catalog-6-tablet@1x.png 1x, img/catalog-img/catalog-6-tablet@2x.png 2x" width="168" height="206">
+              <img class="catalog__item-img" src="img/catalog-img/catalog-6.png" srcset="img/catalog-img/catalog-6@2x.png 2x" alt="Товар сайта" width="84" height="100">
+            </picture>
+          </a>
           <div class="catalog__item-descriptions">
             <p class="catalog__item-heading">Cat Energy SLIM 1000 г</p>
             <dl class="catalog__item-list">
@@ -168,7 +212,13 @@
           <a class="catalog__button button" href="#">Заказать</a>
         </li>
         <li class="catalog__item">
-          <img class="catalog__item-img" src="img/catalog-img/catalog-7.png" alt="Товар Сайта" width="140" height="112">
+          <a class="catalog__item-image__link" href="#">
+            <picture>
+              <source type="image/png" media="(min-width: 768px)" srcset="img/catalog-img/catalog-7-tablet@1x.png 1x, img/catalog-img/catalog-7-tablet@2x.png 2x" width="163" height="174">
+              <img class="catalog__item-img" src="img/catalog-img/catalog-7.png" srcset="img/catalog-img/catalog-7@2x.png 2x" alt="Товар Сайта" width="72" height="84">
+            </picture>
+          </a>
+
           <div class="catalog__item-descriptions">
             <p class="catalog__item-heading">Cat Energy SLIM 500 г</p>
             <dl class="catalog__item-list">

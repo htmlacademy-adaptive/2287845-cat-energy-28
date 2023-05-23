@@ -1,3 +1,19 @@
+.about-products {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $grey-9;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.about-products__container {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+  }
+}
 
 .about-products__list {
   display: flex;
@@ -13,7 +29,8 @@
     justify-content: space-between;
     column-gap: 20px;
     row-gap: 37px;
-    padding-right: 74px;
+    padding-right: 79px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -114,6 +131,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 70px;
   }
 }
 

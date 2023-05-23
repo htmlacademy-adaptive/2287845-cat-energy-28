@@ -9,8 +9,10 @@
 
   @include font(36px, 36px, $black, 400);
   font-family: $fontSecondary;
-  padding-bottom: 41px;
+  padding: 1px 30px 41px 8px;
   text-align: center;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid $grey-2;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -27,11 +29,11 @@
 }
 
 .catalog__list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 19px;
   list-style-type: none;
-  margin: 41px 0 0 0;
+  margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -52,10 +54,11 @@
 .catalog__item {
   display: grid;
   grid-template-columns: repeat(2, 140px);
-  row-gap: 13px;
+  row-gap: 24px;
   position: relative;
   margin: 0 auto;
   padding: 0 0 25px 0;
+  height: 201px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -130,7 +133,7 @@
   @include font(16px, 20px, $grey-7, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
-  margin: 0 0 18px 0;
+  margin: 0 0 13px 0;
   max-width: 76px;
 
   @media (min-width: $tablet-width) {

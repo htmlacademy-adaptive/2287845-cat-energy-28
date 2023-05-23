@@ -1,14 +1,17 @@
 .hero {
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    height: 510px;
   }
 }
 
 .hero__content {
   padding: 0;
+  display: grid;
 
   @media (min-width: $desktop-width) {
     position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px;
   }
 }
 
@@ -20,9 +23,9 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    padding: 0 0 0 90px;
+    padding: 0 0 0 151px;
     width: 100%;
-    margin: 0 auto;
+    margin: -82px auto 0 auto;
 
     &.middle-container {
       padding: 0 30px 0 91px;
@@ -30,7 +33,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    transform: translateX(-25%);
+    padding: 0 0 0 84px;
+    width: 100%;
+    margin: -82px auto 0 auto;
+    z-index: 2;
   }
 }
 
@@ -66,9 +73,9 @@
     align-items: flex-start;
     background: none;
     min-height: auto;
-    margin: 0 0 49px 0;
+    margin: 0 0 50px 0;
     width: 100%;
-    padding: 0 0 0 90px;
+    padding: 0 0 0 117px;
     row-gap: 41px;
 
     &::before {
@@ -80,6 +87,7 @@
     padding: 0 80px;
     margin-bottom: 52px;
     row-gap: 40px;
+    z-index: 1;
   }
 }
 
@@ -87,7 +95,7 @@
   @include font(36px, 36px, $white, 400);
   font-family: $fontSecondary;
   text-align: center;
-  padding: 27px 0 23px 0;
+  padding: 27px 0 26px 0;
   position: relative;
   z-index: 1;
   margin: 0;
@@ -118,6 +126,7 @@
     color: $black;
     text-align: left;
     margin: 0;
+    padding: 0 0 0 3px;
   }
 }
 
@@ -126,7 +135,7 @@
   padding: 11px;
   width: 100%;
   max-width: 280px;
-  margin: 0 0 20px 0;
+  margin: 0 auto 20px auto;
 
   &:active {
     background-color: $green-2;
@@ -134,27 +143,37 @@
   }
 
   @media (min-width: $tablet-width) {
-    grid-area: 1/-1;
+    grid-area: 2/-2;
     align-self: start;
-    margin: 0;
-    padding: 14px 20px;
+    margin: 0 auto 0 121px;
+    padding: 17px 20px;
     font-size: 20px;
     line-height: 20px;
     max-width: 244px;
     z-index: 1;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-area: 2;
+    margin: 32px auto 0 80px;
+  }
 }
 
 .hero__image {
-  margin-top: -137px;
+  margin-top: -138px;
   margin-bottom: 3px;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
-    grid-area: 1/-1;
-    justify-self: center;
     margin: 0;
     transform: translateX(-77px);
-    z-index: 0;
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    transform: translateX(-80px);
   }
 }

@@ -9,11 +9,14 @@
     justify-content: flex-start;
     gap: 42px;
     align-items: center;
-    margin-bottom: 72px;
+    margin-bottom: 103px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 370px;
+    column-gap: 45px;
+    row-gap: 53px;
+    margin-bottom: 68px;
   }
 }
 
@@ -47,6 +50,10 @@
     font-size: 30px;
     line-height: 37px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 15px;
+  }
 }
 
 .example-info__subtitle {
@@ -67,6 +74,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: $grey;
+    padding: 5px 9px;
   }
 }
 
@@ -80,7 +88,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 32px;
     max-width: 174px;
     text-align: right;
     margin-left: auto;
@@ -90,5 +98,9 @@
     margin: 0;
     max-width: unset;
     text-align: inherit;
+    display: flex;
+    gap: 32px;
+    padding-left: 2px;
+    padding-bottom: 2px;
   }
 }
