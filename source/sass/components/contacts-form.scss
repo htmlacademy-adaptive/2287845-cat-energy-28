@@ -61,29 +61,34 @@
   }
 }
 
-.contacts-form__data {
-  @include font(16px, 18px, $grey-6, 400);
-  font-family: $fontSecondary;
-  text-transform: uppercase;
+.contacts-form__container {
   border: 1px solid $platinum;
   padding: 12px 50px 12px 15px;
   width: 100%;
-  margin: 0;
 
   &:focus + svg {
     border-color: 2px solid $grey-6;
     stroke: $green;
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
   @media (min-width: $desktop-width) {
     &:hover {
       border: 1px solid $grey-3;
     }
+  }
+}
+
+.contacts-form__data {
+  @include font(16px, 18px, $grey-6, 400);
+  font-family: $fontSecondary;
+  text-transform: uppercase;
+  border: 0;
+  width: 100%;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -122,6 +127,7 @@
 
   @media (min-width: $tablet-width) {
     right: 18px;
+    top: 23px;
   }
 
   @media (min-width: $desktop-width) {
