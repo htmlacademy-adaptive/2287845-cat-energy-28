@@ -45,26 +45,6 @@
         left: 50%;
         transform: translateX(-50%);
       }
-
-      &::after {
-        content: "";
-        background-image: url("../../img/cat-bg-desktop@1x.jpg");
-        background-repeat: no-repeat;
-        background-position: 10px;
-        background-size: 100%;
-        position: absolute;
-        width: 1040px;
-        height: 695px;
-        right: calc(50% - 720px);
-        top: 0;
-        z-index: 0;
-      }
-
-      @media (min-resolution: 2dppx) {
-        &::after {
-          background-image: url("../../img/cat-bg-desktop@2x.jpg");
-        }
-      }
     }
   }
 }
