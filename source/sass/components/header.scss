@@ -50,14 +50,14 @@
         content: "";
         background-image: url("../../img/cat-bg-desktop@1x.jpg");
         background-repeat: no-repeat;
-        background-position: top right;
+        background-position: 10px;
         background-size: 100%;
         position: absolute;
-        width: 720px;
+        width: 1040px;
         height: 695px;
-        right: 0;
+        right: calc(50% - 720px);
         top: 0;
-        z-index: 1;
+        z-index: 0;
       }
 
       @media (min-resolution: 2dppx) {
