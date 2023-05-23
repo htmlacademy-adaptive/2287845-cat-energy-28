@@ -26,8 +26,7 @@
 
 .contacts__text-container {
   display: flex;
-  padding: 26px 0;
-  column-gap: 2px;
+  padding: 23px 0;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -50,6 +49,7 @@
   font-family: $fontSecondary;
   margin: 0;
   text-transform: uppercase;
+  flex: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -60,6 +60,9 @@
 
 .contacts__text {
   @include font(14px, 20px, $grey-6, 400);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -81,6 +84,8 @@
 
 
 .contacts__map {
-  width: 100vw;
   overflow: hidden;
+  width: 100%;
+  height: 342px;
+  display: block;
 }

@@ -4,7 +4,7 @@
   flex-direction: column;
   gap: 20px;
   padding: 0;
-  margin: 0;
+  margin: 0 0 49px 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
@@ -26,20 +26,14 @@
   display: flex;
   gap: 20px;
 
-  &:last-child {
-    margin: 0 0 53px 0;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     flex-direction: column;
     width: 245px;
     height: 280px;
     gap: 31px;
     position: relative;
+    margin: 0;
+    counter-increment: num;
 
     &--leaf {
       &::before {
