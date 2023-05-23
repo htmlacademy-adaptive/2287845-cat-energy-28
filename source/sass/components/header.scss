@@ -150,6 +150,12 @@
   }
 }
 
+.header__logo {
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
+}
+
 .header__menu-button {
   width: 60px;
   height: 46px;
