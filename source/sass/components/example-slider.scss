@@ -1,9 +1,16 @@
 
 .example-slider {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 2 / -2;
     grid-row: 2 / -2;
     text-align: center;
     align-self: center;
+    padding-bottom: 86px;
+    padding-left: 54px;
   }
 }

@@ -51,61 +51,77 @@
 
 .form-radio__radio {
   position: relative;
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  column-gap: 16px;
+  display: inline-flex;
+  column-gap: 15px;
+  vertical-align: top;
 
-  @media (min-width: $tablet-width) {
-    column-gap: 20px;
+  &:active {
+    opacity: 0.3;
+    color: rgba(34, 34, 34, 0.3);
   }
-}
 
-.form-radio__input {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 20px;
-  height: 20px;
-  transform: translateY(-50%);
-  margin: 0;
-  appearance: none;
-}
-
-.form-radio__control {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border: 1px solid $grey-3;
-  border-radius: 50%;
-  flex-shrink: 0;
-  align-self: flex-start;
-
-
-  &::before {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
-    content: "";
-    background-color: $green;
-    border-radius: 50%;
-
-    @media (min-width: $tablet-width) {
-      width: 18px;
-      height: 18px;
+  /*@media (min-width: $desktop-width) {
+    &:hover {
+      .form-radio__control {
+        border: 1px solid $grey-10;
+      }
     }
   }
 
   @media (min-width: $tablet-width) {
-    width: 40px;
-    height: 40px;
+    column-gap: 20px;
+  }*/
+}
+
+.form-radio__input {
+  position: absolute;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+
+  &:checked + span::before {
+    background-image: url("../../img/radiobutton.svg");
+    background-repeat: no-repeat;
+    top: 0;
+    right: 0;
+    background-position: center;
+  }
+
+  &:disabled + span {
+    opacity: 0.3;
+    cursor: default;
+  }
+}
+
+.form-radio__control {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: fit-content;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    border: 1px solid rgba(205, 205, 205, 1);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    align-self: flex-start;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    &::before {
+      border-color: rgba(186, 186, 186, 1);
+    }
   }
 }
 
@@ -123,9 +139,4 @@
 
 .form-radio__input:checked ~ .form-radio__control::before {
   display: block;
-}
-
-
-.form-radio__radio:hover .form-radio__control {
-  border-color: #bababa;
 }

@@ -3,12 +3,24 @@
   list-style-type: none;
   justify-content: center;
   gap: 24px;
-  padding: 20px 0 0;
+  padding: 0;
   margin: 0;
-  border-top: 1px solid $grey-5;
 
   @media (min-width: $tablet-width) {
     border: 0;
     padding: 0;
+  }
+}
+
+.social__link svg {
+  &:active {
+    fill: $green;
+    fill-opacity: 0.3;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      fill: $green;
+    }
   }
 }

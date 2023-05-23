@@ -7,4 +7,14 @@
   text-align: center;
   padding: 8px 44px;
   border: none;
+
+  &:active {
+    background-color: $green-2;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      background-color: $green-2;
+    }
+  }
 }

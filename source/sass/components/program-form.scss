@@ -1,5 +1,6 @@
 .program-form {
   margin: 0 0 82px 0;
+  overflow: hidden;
 }
 
 .program-form__title {
@@ -28,14 +29,26 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
 .program-form__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    padding: 0 68px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
+    padding: 0;
     column-gap: 80px;
     row-gap: 68px;
   }
@@ -59,6 +72,10 @@
   padding: 7px 44px;
   margin: 0 0 28px 0;
   width: 100%;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

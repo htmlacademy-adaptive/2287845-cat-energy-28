@@ -1,4 +1,8 @@
 .catalog-preview {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 0 71px 0;
   }
@@ -6,28 +10,37 @@
 
 
 .catalog-preview__list {
-  list-style-type: none;
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 45px;
+    row-gap: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 80px;
+    margin-top: 41px;
   }
 }
 
 .catalog-preview__item {
   padding: 24px 20px 22px 20px;
   background-color: $grey;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    padding: 77px 312px 53px 53px;
+    padding: 74px 316px 60px 52px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 61px 55px 52px;
+    padding: 46px 61px 61px 52px;
     max-width: 570px;
     margin-bottom: 0;
   }
@@ -35,7 +48,7 @@
 
 .catalog-preview__wrapper {
   display: flex;
-  column-gap: 19px;
+  column-gap: 21px;
   align-items: center;
   margin: 0 0 22px 0;
 
@@ -45,7 +58,7 @@
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
-    margin: 0 0 39px 0;
+    margin: 0 0 41px 0;
     column-gap: 62px;
   }
 }
@@ -63,8 +76,8 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    right: 62px;
-    top: 50%;
+    right: 61px;
+    top: 51%;
     width: 200px;
     height: 200px;
     transform: translateY(-50%);
@@ -75,7 +88,7 @@
     transform: unset;
     width: 100px;
     height: 100px;
-    top: unset;
+    top: 2px;
     right: unset;
   }
 }
@@ -93,6 +106,7 @@
     @media (min-width: $tablet-width) {
       width: 140px;
       height: 194px;
+      top: -7%;
     }
 
     @media (min-width: $desktop-width) {
@@ -142,7 +156,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 48px 0;
+    margin: 0 0 50px 0;
     flex: 1;
   }
 
@@ -162,6 +176,7 @@
   border-top: 1px solid $grey-5;
   padding-top: 15px;
   width: 100%;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     border: 0;
@@ -170,5 +185,39 @@
     gap: 25px;
     padding: 0;
     width: fit-content;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      .catalog-preview__icon-line {
+        width: 26px;
+      }
+    }
+  }
+}
+
+.catalog-preview__icon {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  vertical-align: top;
+
+  &:active {
+    svg {
+      opacity: 0.3;
+    }
+  }
+}
+
+.catalog-preview__icon-line {
+  width: 18px;
+  transition: all 0.3s ease;
+
+  &:active {
+    opacity: 0.3;
   }
 }

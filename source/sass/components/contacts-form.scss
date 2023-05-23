@@ -13,10 +13,33 @@
   font-family: $fontSecondary;
   margin: 0 0 35px 0;
   padding: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #68b738;
+      top: 21px;
+      right: 107%;
+      width: 100vw;
+      height: 2px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100vw;
+      height: 2px;
+      margin-top: 2px;
+      background: $green;
+      left: 106%;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -47,10 +70,20 @@
   width: 100%;
   margin: 0;
 
+  &:focus + svg {
+    border-color: 2px solid $grey-6;
+    stroke: $green;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      border: 1px solid $grey-3;
+    }
   }
 }
 
@@ -85,8 +118,15 @@
 .contacts-form__img {
   position: absolute;
   right: 15px;
+  stroke: $grey-7;
 
   @media (min-width: $tablet-width) {
     right: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      stroke: $green;
+    }
   }
 }
