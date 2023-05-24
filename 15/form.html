@@ -2,15 +2,19 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff" as="font">
   <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
   <base href="https://htmlacademy-adaptive.github.io/2287845-cat-energy-28/15/">
 </head>
 <body>
@@ -19,9 +23,9 @@
     <div class="header__wrapper">
       <a class="header__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg" width="202" height="60">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" width="174" height="52px">
-          <img src="img/logo-mobile.svg" alt="Кэт Энерджи" width="191" height="38">
+          <source media="(min-width: 1200px)" srcset="img/sprite/icons/logo-desktop.svg" width="202" height="60">
+          <source media="(min-width: 768px)" srcset="img/sprite/icons/logo-tablet.svg" width="174" height="52px">
+          <img src="img/sprite/icons/logo-mobile.svg" alt="Кэт Энерджи" width="191" height="38">
         </picture>
       </a>
       <button class="header__menu-button header__menu-button--active" type="button">
@@ -80,7 +84,7 @@
               <li class="form-radio__item">
 
                 <label class="form-radio__radio">
-                  <input class="form-radio__input" name="weight" type="radio" value="#" checked>
+                  <input class="form-radio__input" name="weight" type="radio" value="#" checked="checked">
                   <span class="form-radio__control"></span>
                   <span class="form-radio__description">Похудение</span>
                 </label>
@@ -109,9 +113,7 @@
                   <span class="contacts-form__text">E-mail:*</span>
                   <div class="contacts-form__container">
                     <input class="contacts-form__data" type="email" placeholder="kuklachev@gmail.com" required>
-                    <svg class="contacts-form__img" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.5 5.5V13.5H17.5V5.5M0.5 0.5H17.5V2.5L9 8.5L0.5 2.5V0.5Z"  stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <img class="contacts-form__img" src="img/sprite/email-form.svg" alt="#">
                   </div>
                 </label>
               </li>
@@ -119,10 +121,8 @@
                 <label class="contacts-form__input">
                   <span class="contacts-form__text">Телефон:*</span>
                   <div class="contacts-form__container">
-                    <input class="contacts-form__data" type="tel" placeholder="8 (960) 900-60-90"  required>
-                    <svg class="contacts-form__img" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                    <input class="contacts-form__data" type="tel" placeholder="8 (960) 900-60-90" required>
+                    <img class="contacts-form__img" src="img/sprite/phone-form.svg" alt="#">
                   </div>
                 </label>
               </li>
@@ -141,7 +141,7 @@
           <ul class="extra-form__list">
             <li class="extra-form__item">
               <label class="extra-form__label">
-                <input class="extra-form__checkbox" type="checkbox" name="sweetener" checked>
+                <input class="extra-form__checkbox" type="checkbox" name="sweetener" checked="checked">
                 <span class="extra-form__mark"></span>
                 <span class="extra-form__text">Сахарозаменитель</span>
               </label>
@@ -192,7 +192,7 @@
 <footer class="footer">
   <div class="footer__container middle-container">
     <a class="footer__logo-link" href="#">
-      <img class="footer__logo" src="img/footer-logo.svg" alt="Кэт энерджи" width="101" height="18">
+      <img class="footer__logo" src="img/sprite/icons/footer-logo.svg" alt="Кэт энерджи" width="101" height="18">
     </a>
     <div class="footer__social social">
       <ul class="social__list">
