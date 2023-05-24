@@ -5,6 +5,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
+    margin: 0 0 64px 0;
   }
 }
 
@@ -15,15 +16,26 @@
   padding: 0;
   position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    top: 16px;
+    left: 201px;
+    background-color: $green;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin: 0 0 76px 0;
 
     &::after {
       content: "";
       position: absolute;
       background-color: #68b738;
-      top: 21px;
+      top: 22px;
       right: 107%;
       width: 100vw;
       height: 2px;
@@ -35,9 +47,9 @@
       top: 50%;
       width: 100vw;
       height: 2px;
-      margin-top: 2px;
+      margin-top: 4px;
       background: $green;
-      left: 106%;
+      left: 108%;
       z-index: -1;
     }
   }
@@ -58,17 +70,22 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 2px;
   }
 }
 
 .contacts-form__container {
   border: 1px solid $platinum;
-  padding: 12px 50px 12px 15px;
+  padding: 12px 37px 10px 13px;
   width: 100%;
 
   &:focus + svg {
     border-color: 2px solid $grey-6;
     stroke: $green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 42px 9px 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,7 +112,7 @@
 .contacts-form__list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 13px;
   list-style-type: none;
   margin: 0 0 24px 0;
   padding: 0;
@@ -118,16 +135,21 @@
   align-items: center;
   gap: 10px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    gap: 21px;
+  }
 }
 
 .contacts-form__img {
   position: absolute;
-  right: 15px;
+  top: 15px;
+  right: 16px;
   stroke: $grey-7;
 
   @media (min-width: $tablet-width) {
     right: 18px;
-    top: 23px;
+    top: 19px;
   }
 
   @media (min-width: $desktop-width) {

@@ -4,12 +4,14 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 74px 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2;
     padding: 0;
+    margin: 0 0 67px 0;
   }
 }
 
@@ -18,14 +20,13 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
-  padding: 0 0 19px 0;
+  padding: 0 0 15px 0;
   margin: 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $platinum;
-    padding: 25px 30px 29px 28px;
-    margin: 20px 0 0 0;
+    padding: 30px 30px 20px 30px;
   }
 
   &::after {
@@ -45,8 +46,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 25px;
-    gap: 29px;
+    padding: 32px 24px 23px 27px;
+    gap: 12px;
   }
 }
 
@@ -59,6 +60,10 @@
   &:active {
     opacity: 0.3;
     color: rgba(34, 34, 34, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -83,6 +88,10 @@
     top: 0;
     right: 0;
     background-position: center;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/radiobutton-tablet.svg");
+    }
   }
 
   &:disabled + span {
@@ -99,6 +108,7 @@
   line-height: 18px;
   text-transform: uppercase;
   width: fit-content;
+  transform: translateY(-4px);
   cursor: pointer;
 
   &::before {
@@ -109,6 +119,11 @@
     height: 30px;
     align-self: flex-start;
     flex-shrink: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &:hover {
