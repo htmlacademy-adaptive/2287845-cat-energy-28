@@ -1,37 +1,59 @@
 .comment-form {
   border: 0;
   padding: 0;
-  margin: 0 0 23px 0;
+  margin: 0 0 19px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 61px 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-column: 1 / -1;
-    margin: 0;
+    margin: 0 0 69px 0;
   }
 }
 
+
 .comment-form__text {
+  @include font(24px, 26px, $black, 400);
+  font-family: $fontSecondary;
+  display: inline-block;
   padding: 0;
-  margin: 0 0 38px 0;
+  margin: 0 0 34px 0;
   position: relative;
 
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    background-color: $green;
+    top: 14px;
+    left: 144px;
+  }
+
   @media (min-width: $tablet-width) {
-    &::after {
-      content: "";
-      position: absolute;
-      background-color: #68b738;
-      top: 21px;
-      left: 125%;
-      width: 100vw;
-      height: 2px;
-    }
+    margin: 0 0 75px 0;
+    font-size: 36px;
+    line-height: 36px;
 
     &::before {
       content: "";
       position: absolute;
+      height: 2px;
+      width: 100vw;
+      background-color: $green;
+      top: 23px;
+      left: 123%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
       background-color: #68b738;
-      top: 21px;
-      right: 118%;
+      top: 22px;
+      right: 121%;
       width: 100vw;
       height: 2px;
     }
@@ -39,19 +61,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 76px 0;
-  }
-}
-
-.comment-form__text-content {
-  @include font(24px, 26px, $black, 400);
-  font-family: $fontSecondary;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
   }
 }
 
@@ -63,16 +72,17 @@
   padding: 10px 12px 15px 15px;
   margin: 0;
   width: 100%;
-  resize: vertical;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     max-width: 1220px;
     padding: 10px 15px 15px 19px;
+    height: 174px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     max-width: 1440px;
 
     &:hover {

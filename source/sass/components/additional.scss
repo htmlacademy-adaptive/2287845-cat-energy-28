@@ -1,5 +1,14 @@
 .additional {
   overflow: hidden;
+  margin: 0 0 34px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 75px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 22px 0;
+  }
 }
 
 .additional__container {
@@ -13,13 +22,36 @@
 .additional__title {
   @include font(24px, 24px, $black, 400);
   font-family: $fontSecondary;
-  margin: 0 0 36px 0;
+  margin: 0 0 34px 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100vw;
+    background-color: $green;
+    top: 13px;
+    left: 88%;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 26px 37px;
+    margin: 0 0 77px 37px;
     position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      width: 100vw;
+      height: 2px;
+      margin-top: 2px;
+      right: 106%;
+      background: #68b738;
+      z-index: -1;
+    }
 
     &::before {
       content: "";
@@ -28,27 +60,15 @@
       width: 100vw;
       height: 2px;
       margin-top: 2px;
-      transform: translateX(370px);
-      background: #68b738;
-      z-index: -1;
-      overflow: hidden;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 50vw;
-      height: 2px;
-      margin-top: 2px;
-      transform: translateX(-757px);
-      overflow: hidden;
+      left: 56%;
       background: #68b738;
       z-index: -1;
     }
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0 0 77px 0;
+
     &::before {
       content: "";
       position: absolute;
@@ -56,7 +76,7 @@
       width: 100vw;
       height: 2px;
       margin-top: 2px;
-      transform: translateX(371px);
+      left: 42%;
       background: #68b738;
       z-index: -1;
     }
@@ -68,7 +88,7 @@
       width: 100vw;
       height: 2px;
       margin-top: 2px;
-      right: 17%;
+      right: 104%;
       background: #68b738;
       z-index: -1;
     }
@@ -79,7 +99,7 @@
   @include font(16px, 16px, $grey-7, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
-  margin: 0 0 13px 0;
+  margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -117,6 +137,7 @@
     font-size: 16px;
     line-height: 20px;
     min-width: 42px;
+    text-align: end;
   }
 }
 
@@ -133,6 +154,7 @@
     padding: 26px 0 28px;
     gap: 26px;
     border: 1px solid $grey-3;
+    margin: 0 0 66px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -174,7 +196,7 @@
 
     &:last-child {
       border-bottom: 1px solid $grey-3;
-      padding: 0 0 17px 0;
+      padding: 13px 0 16px 0;
     }
   }
 }
@@ -190,7 +212,7 @@
     max-width: 610px;
     padding: 0;
     align-items: center;
-    column-gap: 178px;
+    column-gap: 165px;
     justify-content: unset;
   }
 }
@@ -205,7 +227,7 @@
   margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
-    gap: 55px;
+    gap: 31px;
     margin: 0;
   }
 

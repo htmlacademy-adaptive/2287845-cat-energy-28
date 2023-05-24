@@ -1,18 +1,9 @@
 .header {
-  &--form {
-    border-bottom: 1px solid $grey-5;
-    margin: 0 0 27px 0;
-
-    @media (min-width: $tablet-width) {
-      border: none;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding: 0 30px;
-    margin: 0 auto;
+    margin-bottom: 62px;
     max-width: 1220px;
     width: 100%;
     border: 0;
@@ -21,9 +12,25 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     padding: 53px 0 0 0;
+  }
 
-    &--catalog {
-      margin: 0 auto 64px auto;
+  &--catalog {
+    @media (min-width: $desktop-width) {
+      margin: 0 auto 79px auto;
+    }
+  }
+
+  &--form {
+    border-bottom: 1px solid $grey-5;
+    margin: 0 0 27px 0;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      margin: 0 auto 65px auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 auto 78px auto;
     }
   }
 
@@ -45,26 +52,6 @@
         left: 50%;
         transform: translateX(-50%);
       }
-
-      &::after {
-        content: "";
-        background-image: url("../../img/cat-bg-desktop@1x.jpg");
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: 100%;
-        position: absolute;
-        width: 720px;
-        height: 695px;
-        right: 0;
-        top: 0;
-        z-index: 1;
-      }
-
-      @media (min-resolution: 2dppx) {
-        &::after {
-          background-image: url("../../img/cat-bg-desktop@2x.jpg");
-        }
-      }
     }
   }
 }
@@ -84,7 +71,7 @@
         background-size: 100%;
         position: absolute;
         width: 1040px;
-        height: 669px;
+        height: 697px;
         right: calc(50% - 1033px);
         top: 0;
         z-index: 0;
@@ -100,7 +87,12 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    margin-bottom: 62px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    z-index: 2;
     padding: 0;
   }
 
@@ -111,10 +103,12 @@
 }
 
 .header__logo {
-  max-width: 191px;
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-top: 20px;
+    padding-top: 22px;
   }
 }
 
