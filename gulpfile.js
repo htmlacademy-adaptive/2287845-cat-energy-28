@@ -11,6 +11,8 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import {deleteAsync} from 'del';
+import {stacksvg} from "gulp-stacksvg";
+
 
 
 // Styles
@@ -71,13 +73,13 @@ const svg = () => {
     .pipe(gulp.dest('build/img'))
 }
 
-/*// Stack
+// Stack
 
-const makeStack = () => {
-  return gulp.src('source/img/icons/!*.svg')
+export const makeStack = () => {
+  return gulp.src('source/img/icons/*.svg')
     .pipe(stacksvg({ output: `sprite` }))
     .pipe(gulp.dest('build/img/icons'))
-}*/
+}
 
 // Copy
 

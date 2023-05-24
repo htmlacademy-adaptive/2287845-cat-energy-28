@@ -140,7 +140,7 @@
   z-index: -1;
 
   &:checked + span::before {
-    background-image: url("../../img/icons/tick.svg");
+    background-image: url("../../img/sprite/icons/tick.svg");
     background-position: center;
 
     @media (min-width: $tablet-width) {
