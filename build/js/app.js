@@ -1,1 +1,0 @@
-const burgerMenu=()=>{const e=document.querySelector(".header__menu-button"),t=document.querySelector(".nav");e.classList.remove("header__menu-button--active"),t.classList.remove("nav--active"),e.addEventListener("click",(function(){e.classList.toggle("header__menu-button--active"),t.classList.toggle("nav--active")}))};document.addEventListener("DOMContentLoaded",burgerMenu);
