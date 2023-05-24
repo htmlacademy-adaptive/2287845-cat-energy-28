@@ -83,14 +83,14 @@
   z-index: -1;
 
   &:checked + span::before {
-    background-image: url("../../img/radiobutton.svg");
+    background-image: url("../../img/icons/radiobutton.svg");
     background-repeat: no-repeat;
     top: 0;
     right: 0;
     background-position: center;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/radiobutton-tablet.svg");
+      background-image: url("../../img/icons/radiobutton-tablet.svg");
     }
   }
 
