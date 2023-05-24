@@ -1,5 +1,10 @@
 .additional {
   overflow: hidden;
+  margin: 0 0 34px 0;
+}
+
+@media (min-width: $tablet-width) {
+  margin: 0 0 75px 0;
 }
 
 .additional__container {
@@ -13,12 +18,23 @@
 .additional__title {
   @include font(24px, 24px, $black, 400);
   font-family: $fontSecondary;
-  margin: 0 0 36px 0;
+  margin: 0 0 34px 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100vw;
+    background-color: $green;
+    top: 13px;
+    left: 88%;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 26px 37px;
+    margin: 0 0 77px 37px;
     position: relative;
 
     &::before {
@@ -79,7 +95,7 @@
   @include font(16px, 16px, $grey-7, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
-  margin: 0 0 13px 0;
+  margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -117,6 +133,7 @@
     font-size: 16px;
     line-height: 20px;
     min-width: 42px;
+    text-align: end;
   }
 }
 
@@ -133,6 +150,7 @@
     padding: 26px 0 28px;
     gap: 26px;
     border: 1px solid $grey-3;
+    margin: 0 0 66px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -205,7 +223,7 @@
   margin: 0 0 14px 0;
 
   @media (min-width: $tablet-width) {
-    gap: 55px;
+    gap: 31px;
     margin: 0;
   }
 
