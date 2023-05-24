@@ -74,30 +74,37 @@
 .form-radio__input {
   position: absolute;
   appearance: none;
-  width: 30px;
-  height: 30px;
-  top: 0;
-  left: 0;
+  width: 42px;
+  height: 42px;
+  top: -1px;
+  left: -1px;
   margin: 0;
   padding: 0;
   z-index: -1;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 1px;
-    left: 6px;
+    top: -6px;
+    left: 0;
     border-radius: 50%;
   }
 
   &:checked + span::before {
-    background-image: url("../../img/sprite/icons/radiobutton.svg");
-    background-repeat: no-repeat;
-    top: 0;
-    right: 0;
-    background-position: center;
+    content: "";
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 29%;
+    left: 29%;
+    width: 13px;
+    height: 13px;
+    background-color: $green;
+    border-radius: 50%;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/sprite/icons/radiobutton-tablet.svg");
+      width: 18px;
+      height: 18px;
+      left: 11px;
+      top: 11px;
     }
   }
 
@@ -108,19 +115,22 @@
 }
 
 .form-radio__control {
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  width: fit-content;
-  transform: translateY(-4px);
-  cursor: pointer;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  align-self: flex-start;
+  flex-shrink: 0;
+  position: relative;
+  bottom: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 
   &::before {
     content: "";
-    border: 1px solid rgba(205, 205, 205, 1);
     border-radius: 50%;
     width: 30px;
     height: 30px;

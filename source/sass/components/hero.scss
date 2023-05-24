@@ -1,8 +1,3 @@
-.hero {
-  @media (min-width: $desktop-width) {
-    height: 510px;
-  }
-}
 
 .hero__content {
   padding: 0;
@@ -11,7 +6,8 @@
   @media (min-width: $desktop-width) {
     position: relative;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px;
+    grid-template-rows: auto;
+    margin: 0 auto 134px auto;
   }
 }
 
@@ -155,7 +151,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: 2;
-    margin: 32px auto 0 80px;
+    margin: -187px auto 0 80px;
   }
 }
 
