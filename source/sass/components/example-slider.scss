@@ -3,6 +3,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -14,3 +15,63 @@
     padding-left: 54px;
   }
 }
+
+
+.example-slider__toggle {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 54%;
+  transform: translateX(-50%);
+  padding: 0;
+  background-color: $grey-4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: -18px;
+    transform: translateY(-50%);
+
+    border: 2px solid $grey-4;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 18px;
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+    mask-image: url("../../img/sprite/sprite.svg#slider");
+    background-color: $grey-4;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background-color: $green;
+
+    &::before {
+      border-color: $green;
+    }
+
+    &::after {
+      background-color: $green;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+

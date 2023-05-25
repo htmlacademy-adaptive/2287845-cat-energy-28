@@ -74,9 +74,9 @@
 .form-radio__input {
   position: absolute;
   appearance: none;
-  width: 42px;
-  height: 42px;
-  top: -1px;
+  width: 31px;
+  height: 31px;
+  top: -6px;
   left: -1px;
   margin: 0;
   padding: 0;
@@ -84,6 +84,8 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
+    width: 42px;
+    height: 42px;
     top: -6px;
     left: 0;
     border-radius: 50%;

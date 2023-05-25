@@ -29,7 +29,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 76px 0;
+    margin: 0 0 81px 0;
 
     &::after {
       content: "";
@@ -89,10 +89,9 @@
   padding: 12px 37px 10px 13px;
   flex: 1;
 
-  &:focus + svg path {
+  &:focus + svg {
     border-color: 2px solid $grey-6;
-    stroke: $green;
-    fill: $green;
+    color: $green;
   }
 
   @media (min-width: $tablet-width) {
@@ -122,8 +121,8 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    gap: 20px;
-    margin: 0 0 65px 0;
+    gap: 27px;
+    margin: 0 0 69px;
   }
 
   @media (min-width: $desktop-width) {
@@ -149,7 +148,7 @@
   position: absolute;
   top: 50%;
   right: 16px;
-  stroke: $grey-7;
+  color: $grey-7;
   transform: translateY(-50%);
 
   @media (min-width: $tablet-width) {
@@ -158,7 +157,7 @@
 
   @media (min-width: $desktop-width) {
     &:hover {
-      stroke: $green;
+      color: $green;
     }
   }
 }
