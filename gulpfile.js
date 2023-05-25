@@ -81,10 +81,10 @@ const sprite = () => {
     .pipe(gulp.dest('build/img/sprite'));
 }
 
-export const makeStack = () => {
-  return gulp.src('source/img/svg/*.svg')
+const makeStack = () => {
+  return gulp.src('source/img/sprite/*.svg')
     .pipe(stacksvg({ output: `sprite` }))
-    .pipe(gulp.dest('build/img/svg'))
+    .pipe(gulp.dest('build/img/sprite'))
 }
 
 // Copy
