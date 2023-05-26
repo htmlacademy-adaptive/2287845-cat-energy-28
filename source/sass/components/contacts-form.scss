@@ -93,7 +93,7 @@
     color: $error;
   }
 
-  &--error {
+  &--error:not(:focus) {
     border: 2px solid $error;
   }
 
@@ -162,11 +162,5 @@
 
   @media (min-width: $tablet-width) {
     right: 18px;
-  }
-
-  @media (min-width: $desktop-width) {
-    &:hover {
-      color: $green;
-    }
   }
 }
