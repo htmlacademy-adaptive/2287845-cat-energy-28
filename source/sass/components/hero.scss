@@ -7,7 +7,7 @@
     position: relative;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    margin: 0 auto 134px auto;
+    margin: 0 auto 128px;
   }
 }
 
@@ -151,7 +151,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: 2;
-    margin: -187px auto 0 80px;
+    margin: -192px auto 0 80px;
   }
 }
 
