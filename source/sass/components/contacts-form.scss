@@ -89,6 +89,11 @@
   padding: 12px 37px 10px 13px;
   flex: 1;
 
+  &::placeholder {
+    opacity: 1;
+    color: $grey-6;
+  }
+
   &:focus + svg {
     border-color: 2px solid $grey-6;
     color: $green;
@@ -104,11 +109,6 @@
     &:hover {
       border: 1px solid $grey-3;
     }
-  }
-
-  &::placeholder {
-    opacity: 1;
-    color: $grey-4;
   }
 }
 

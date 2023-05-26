@@ -39,7 +39,7 @@
 
 .hero__wrapper {
   position: relative;
-  background-image: url("../../img/index-bg-cat.jpg");
+  background-image: url("../img/index-bg-cat.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(104, 183, 56, 0.85);
@@ -48,7 +48,7 @@
   z-index: -2;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index-bg-cat@2x.jpg");
+    background-image: url("../img/index-bg-cat@2x.jpg");
     background-size: 320px 302px;
   }
 
