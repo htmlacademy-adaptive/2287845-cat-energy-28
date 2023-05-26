@@ -90,7 +90,7 @@
   flex: 1;
 
   &--error + svg {
-    fill: $error;
+    color: $error;
   }
 
   &--error {
