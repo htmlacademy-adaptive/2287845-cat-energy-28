@@ -2,17 +2,16 @@ import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
+import squoosh from 'gulp-libsquoosh';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-terser';
-import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import {deleteAsync} from 'del';
 import {stacksvg} from "gulp-stacksvg";
-
 
 
 // Styles
@@ -60,7 +59,7 @@ const copyImages = () => {
 }
 
 const createWebp = () => {
-  return gulp.src('source/img/*.{jpg,png}')
+  return gulp.src(['source/img/**/*.{jpg,png}', '!source/img/favicons/*.{jpg,png}'])
     .pipe(squoosh({
       webp: {},
     }))
@@ -68,18 +67,17 @@ const createWebp = () => {
 }
 
 const svg = () => {
-  return gulp.src(['source/img/**/*.svg', '!source/img/icons/*.svg'])
+  return gulp.src(['source/img/svg/*.svg', '!source/img/favicons/*.svg'])
     .pipe(svgo())
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img/svg'));
 }
 
-// Stack
-
-export const makeStack = () => {
-  return gulp.src('source/img/icons/*.svg')
+const makeStack = () => {
+  return gulp.src('source/img/sprite/*.svg')
     .pipe(stacksvg({ output: `sprite` }))
-    .pipe(gulp.dest('build/img/icons'))
+    .pipe(gulp.dest('build/img/sprite'))
 }
+
 
 // Copy
 
@@ -128,7 +126,6 @@ const watcher = () => {
 }
 
 // Build
-
 export const build = gulp.series(
   clean,
   copy,
@@ -138,8 +135,9 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
+    makeStack,
     createWebp
-  )
+  ),
 );
 
 export default gulp.series(
@@ -151,6 +149,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
+    makeStack,
     createWebp
   ),
   gulp.series(

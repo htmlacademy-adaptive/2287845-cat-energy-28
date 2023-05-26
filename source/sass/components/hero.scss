@@ -7,7 +7,7 @@
     position: relative;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    margin: 0 auto 134px auto;
+    margin: 0 auto 128px;
   }
 }
 
@@ -39,7 +39,7 @@
 
 .hero__wrapper {
   position: relative;
-  background-image: url("../../img/index-img/index-bg-cat.jpg");
+  background-image: url("../img/index-bg-cat.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(104, 183, 56, 0.85);
@@ -48,7 +48,7 @@
   z-index: -2;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index-img/index-bg-cat@2x.jpg");
+    background-image: url("../img/index-bg-cat@2x.jpg");
     background-size: 320px 302px;
   }
 
@@ -151,7 +151,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: 2;
-    margin: -187px auto 0 80px;
+    margin: -192px auto 0 80px;
   }
 }
 
