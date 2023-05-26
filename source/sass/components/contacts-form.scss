@@ -89,6 +89,14 @@
   padding: 12px 37px 10px 13px;
   flex: 1;
 
+  &--error + svg {
+    fill: $error;
+  }
+
+  &--error {
+    border: 2px solid $error;
+  }
+
   &::placeholder {
     opacity: 1;
     color: $grey-6;
@@ -103,6 +111,7 @@
     padding: 10px 42px 9px 18px;
     font-size: 20px;
     line-height: 30px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
