@@ -89,7 +89,7 @@
   padding: 12px 37px 10px 13px;
   flex: 1;
 
-  &--error + svg {
+  &--error:not(:focus) + svg {
     color: $error;
   }
 
