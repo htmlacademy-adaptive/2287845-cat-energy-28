@@ -11,7 +11,6 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import {deleteAsync} from 'del';
-import svgstore from 'gulp-svgstore';
 import {stacksvg} from "gulp-stacksvg";
 
 
@@ -59,26 +58,18 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'))
 }
 
-  const createWebp = () => {
-  return gulp.src(['source/img/*.{jpg,png}', '!source/img/favicons/*.{jpg,png}'])
+const createWebp = () => {
+  return gulp.src('source/img/*.{jpg,png}')
     .pipe(squoosh({
       webp: {},
     }))
     .pipe(gulp.dest('build/img'))
 }
 
-const svg = () =>
-  gulp.src(['source/img/svg/*.svg', '!source/img/favicons/*.svg'])
+const svg = () => {
+  return gulp.src(['source/img/svg/*.svg', '!source/img/favicons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img/svg'));
-
-const sprite = () => {
-  return gulp.src('source/img/sprite/*.svg')
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img/sprite'));
 }
 
 export const makeStack = () => {
@@ -86,6 +77,7 @@ export const makeStack = () => {
     .pipe(stacksvg({ output: `sprite` }))
     .pipe(gulp.dest('build/img/sprite'))
 }
+
 
 // Copy
 
@@ -144,7 +136,7 @@ export const build = gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    makeStack,
     createWebp
   )
 );
@@ -158,7 +150,7 @@ export default gulp.series(
     html,
     scripts,
     svg,
-    sprite,
+    makeStack,
     createWebp
   ),
   gulp.series(
