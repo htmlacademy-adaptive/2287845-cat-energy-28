@@ -18,10 +18,10 @@
   justify-content: space-between;
   margin: 0;
   width: 280px;
-  fill: $grey-4;
+  color: $grey-4;
 
   &:active {
-    fill: $green;
+    color: $green;
     opacity: 0.3;
   }
 
@@ -31,7 +31,7 @@
 
   @media (min-width: $desktop-width) {
     &:hover {
-      fill: $green;
+      color: $green;
     }
   }
 }

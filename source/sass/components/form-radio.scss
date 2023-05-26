@@ -4,12 +4,14 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 74px 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2;
     padding: 0;
+    margin: 0 0 70px;
   }
 }
 
@@ -18,14 +20,13 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
-  padding: 0 0 19px 0;
+  padding: 0 0 20px;
   margin: 0;
   position: relative;
 
   @media (min-width: $tablet-width) {
     border: 1px solid $platinum;
-    padding: 25px 30px 29px 28px;
-    margin: 20px 0 0 0;
+    padding: 30px 30px 20px 30px;
   }
 
   &::after {
@@ -45,8 +46,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 25px;
-    gap: 29px;
+    padding: 28px 24px 23px 27px;
+    gap: 12px;
   }
 }
 
@@ -61,6 +62,10 @@
     color: rgba(34, 34, 34, 0.3);
   }
 
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     cursor: pointer;
   }
@@ -69,20 +74,36 @@
 .form-radio__input {
   position: absolute;
   appearance: none;
-  width: 30px;
-  height: 30px;
-  top: 0;
-  left: 0;
+  width: 31px;
+  height: 31px;
+  top: -1px;
+  left: -1px;
   margin: 0;
   padding: 0;
   z-index: -1;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+  }
 
   &:checked + span::before {
-    background-image: url("../../img/radiobutton.svg");
-    background-repeat: no-repeat;
-    top: 0;
-    right: 0;
-    background-position: center;
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 13px;
+    background-color: $green;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &:disabled + span {
@@ -92,23 +113,31 @@
 }
 
 .form-radio__control {
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  width: fit-content;
-  cursor: pointer;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  align-self: flex-start;
+  flex-shrink: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 
   &::before {
     content: "";
-    border: 1px solid rgba(205, 205, 205, 1);
     border-radius: 50%;
     width: 30px;
     height: 30px;
     align-self: flex-start;
     flex-shrink: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &:hover {
@@ -119,13 +148,17 @@
 }
 
 .form-radio__description {
-  @include font(16px, 18px, $black-2, 400);
+  @include font(16px, 30px, $black-2, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 40px;
   }
 }
 

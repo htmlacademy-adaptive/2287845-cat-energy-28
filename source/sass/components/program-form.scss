@@ -1,21 +1,25 @@
 .program-form {
-  margin: 0 0 82px 0;
+  margin: 0 0 32px 0;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 72px 0;
+  }
 }
 
 .program-form__title {
   @include font(36px, 36px, $black, 400);
   font-family: $fontSecondary;
-  margin: 0 0 37px 0;
+  margin: 0 0 38px 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 65px 0 54px 0;
+    margin: 0 0 54px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 0 56px;
   }
 }
 
@@ -23,17 +27,18 @@
   @include font(14px, 18px, $black, 400);
   font-family: $fontSecondary;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 38px 0;
   grid-column: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
+    margin-left: 2px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 0 0 63px 0;
   }
 }
 
@@ -47,10 +52,9 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0 auto;
+    margin: 0 auto 13px auto;
     padding: 0;
     column-gap: 80px;
-    row-gap: 68px;
   }
 }
 
@@ -62,6 +66,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+    padding-bottom: 6px;
   }
 }
 
@@ -69,8 +74,8 @@
   @include font(16px, 20px, $white, 400);
   font-family: $fontSecondary;
   display: block;
-  padding: 7px 44px;
-  margin: 0 0 28px 0;
+  padding: 10px 44px;
+  margin: 0 0 22px 0;
   width: 100%;
 
   &:active {
@@ -80,7 +85,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 16px 20px;
-    margin: 0;
+    margin: 0 0 0 2px;
     max-width: 282px;
     flex: 1;
   }
@@ -95,14 +100,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    padding: 0 110px 0 40px;
-    gap: 64px;
+    justify-content: space-between;
+    padding: 0 109px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
     margin: 0;
     padding: 0;
-    gap: 58px;
+    gap: 81px;
+    justify-content: start;
   }
 }

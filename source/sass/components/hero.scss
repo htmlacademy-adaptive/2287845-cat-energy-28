@@ -1,8 +1,3 @@
-.hero {
-  @media (min-width: $desktop-width) {
-    height: 510px;
-  }
-}
 
 .hero__content {
   padding: 0;
@@ -11,7 +6,8 @@
   @media (min-width: $desktop-width) {
     position: relative;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px;
+    grid-template-rows: auto;
+    margin: 0 auto 128px;
   }
 }
 
@@ -23,9 +19,9 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    padding: 0 0 0 75px;
+    padding: 0 0 0 151px;
     width: 100%;
-    margin: -75px auto 0 auto;
+    margin: -82px auto 0 auto;
 
     &.middle-container {
       padding: 0 30px 0 91px;
@@ -34,13 +30,16 @@
 
   @media (min-width: $desktop-width) {
     transform: translateX(-25%);
+    padding: 0 0 0 84px;
+    width: 100%;
+    margin: -82px auto 0 auto;
     z-index: 2;
   }
 }
 
 .hero__wrapper {
   position: relative;
-  background-image: url("../../img/index-img/index-bg-cat.jpg");
+  background-image: url("../img/index-bg-cat.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: rgba(104, 183, 56, 0.85);
@@ -49,7 +48,7 @@
   z-index: -2;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/index-img/index-bg-cat@2x.jpg");
+    background-image: url("../img/index-bg-cat@2x.jpg");
     background-size: 320px 302px;
   }
 
@@ -142,8 +141,8 @@
   @media (min-width: $tablet-width) {
     grid-area: 2/-2;
     align-self: start;
-    margin: 0 auto 0 89px;
-    padding: 14px 20px;
+    margin: 0 auto 0 121px;
+    padding: 17px 20px;
     font-size: 20px;
     line-height: 20px;
     max-width: 244px;
@@ -152,6 +151,7 @@
 
   @media (min-width: $desktop-width) {
     grid-area: 2;
+    margin: -192px auto 0 80px;
   }
 }
 

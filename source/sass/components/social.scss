@@ -1,3 +1,9 @@
+.social {
+  @media (min-width: $tablet-width) {
+    padding: 0 4px 5px 0;
+  }
+}
+
 .social__list {
   display: flex;
   list-style-type: none;
@@ -13,13 +19,18 @@
 }
 
 .social__link svg {
+  color: $grey-4;
+  display: block;
+
   &:active {
+    color: $green;
     fill: $green;
     fill-opacity: 0.3;
   }
 
   @media (min-width: $desktop-width) {
     &:hover {
+      color: $green;
       fill: $green;
     }
   }
